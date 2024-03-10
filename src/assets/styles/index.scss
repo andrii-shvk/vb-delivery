@@ -1,0 +1,20 @@
+@import './reset.scss';
+@import './variables/global.scss';
+@import './themes/normal.scss';
+@import './themes/dark.scss';
+
+body {
+    font: var(--font-s);
+    color: var(--primary-color);
+}
+
+p {
+    color: var(--primary-color);
+}
+
+.app {
+    min-height: 100vh;
+    background-color: var(--light-bg);
+    display: flex;
+    flex-direction: column;
+}

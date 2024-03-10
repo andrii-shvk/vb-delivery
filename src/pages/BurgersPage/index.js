@@ -1,0 +1,1 @@
+export { BurgersPage } from "./ui/BurgersPage";

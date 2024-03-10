@@ -1,0 +1,1 @@
+export { PizzasPage } from "./ui/PizzasPage";
