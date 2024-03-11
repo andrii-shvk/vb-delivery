@@ -12,9 +12,13 @@ p {
     color: var(--primary-color);
 }
 
+.icon {
+    color: var(--icon-color);
+}
+
 .app {
     min-height: 100vh;
-    background-color: var(--light-bg);
+    background-color: var(--bg-color);
     display: flex;
     flex-direction: column;
 }

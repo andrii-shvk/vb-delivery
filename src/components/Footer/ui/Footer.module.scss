@@ -1,0 +1,30 @@
+.footer {
+    margin-top: auto;
+    flex-shrink: 0;
+    background: var(--light-bg);
+}
+
+.container {
+    max-width: var(--container-main);
+    margin: 0 auto;
+}
+
+.content {
+    height: var(--content-footer-height);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px 0;
+}
+
+.logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    p {
+        color: var(--primary-color);
+        font: var(--font-m);
+        font-weight: 700;
+    }
+}

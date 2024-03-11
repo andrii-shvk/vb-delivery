@@ -16,7 +16,15 @@ const router = createBrowserRouter([
       {
         path: '/pizzas',
         element: <div>Main Page</div>
-      }
+      },
+      {
+        path: '/burgers',
+        element: <div>Burgers Page</div>
+      },
+      {
+        path: '/others',
+        element: <div>Others Page</div>
+      },
     ]
   },
   // {

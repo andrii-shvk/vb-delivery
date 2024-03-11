@@ -1,0 +1,27 @@
+.link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 105px;
+    gap: 10px;
+
+    border: 1px solid var(--icon-color);
+    padding: 20px 30px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 135px;
+    background: var(--light-bg);
+}
+
+.text {
+    font: var(--font-m);
+    color: var(--primary-color);
+}
+
+.active {
+    background: var(--icon-color);
+    & svg {
+        color: #fff;
+    }
+}

@@ -16,8 +16,6 @@ const Header = () => {
     const handleToggleTheme = () => {
         toggleTheme();
     }
-    console.log('theme', theme);
-    // продолжить тут с темой
 
     return (
         <div className={cls.header}>
