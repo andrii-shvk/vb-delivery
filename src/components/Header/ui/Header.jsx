@@ -30,8 +30,9 @@ const Header = () => {
 
                     <div className={cls.buttons}>
                             <Icon Svg={ToggleTheme} clickable onClick={handleToggleTheme} />
-                        <Button>
+                        <Button className={cls.button}>
                             <CartIcon />
+                            <span>0 $</span>
                         </Button>
                     </div>
                 </div>

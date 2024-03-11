@@ -1,1 +1,1 @@
-export { PizzasPage } from "./ui/PizzasPage";
+export { PizzasPageAsync as PizzasPage } from "./ui/PizzasPage.async";

@@ -7,23 +7,39 @@ import { OthersPage } from './pages/OthersPage/index.js'
 import { BurgersPage } from './pages/BurgersPage/index.js'
 import { ThemeProvider } from './providers/ThemeProvider';
 import { Theme } from './const/const';
+import { Suspense } from 'react';
+import { NotFoundPage } from './pages/NotFoundPage';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <MainLayout />,
+    element: <Suspense fallback={<p>Loading...</p>}>
+      <MainLayout />
+    </Suspense>,
     children: [
       {
         path: '/pizzas',
-        element: <div>Main Page</div>
+        element: <Suspense fallback={<p>Loading...</p>}>
+          <PizzasPage />
+        </Suspense>
       },
       {
         path: '/burgers',
-        element: <div>Burgers Page</div>
+        element: <Suspense fallback={<p>Loading...</p>}>
+        <BurgersPage />
+      </Suspense>
       },
       {
         path: '/others',
-        element: <div>Others Page</div>
+        element: <Suspense fallback={<p>Loading...</p>}>
+        <OthersPage />
+      </Suspense>
+      },
+      {
+        path: '*',
+        element: <Suspense fallback={<p>Loading...</p>}>
+        <NotFoundPage />
+      </Suspense>
       },
     ]
   },

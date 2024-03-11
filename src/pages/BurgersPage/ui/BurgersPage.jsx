@@ -6,4 +6,4 @@ const BurgersPage = () => {
     );
 }
  
-export {BurgersPage};
+export default BurgersPage;

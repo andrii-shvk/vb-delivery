@@ -1,1 +1,1 @@
-export { OthersPage } from "./ui/OthersPage";
+export { OthersPageAsync as OthersPage } from "./ui/OthersPage.async";

@@ -6,4 +6,4 @@ const PizzasPage = () => {
     );
 }
  
-export {PizzasPage};
+export default PizzasPage;

@@ -6,4 +6,4 @@ const OthersPage = () => {
     );
 }
  
-export {OthersPage};
+export default OthersPage;
