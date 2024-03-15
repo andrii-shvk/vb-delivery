@@ -2,7 +2,9 @@ import './MainPage.module.scss';
 
 const MainPage = () => {
     return (
-        <div></div>
+        <div>
+            hello
+        </div>
     );
 }
  

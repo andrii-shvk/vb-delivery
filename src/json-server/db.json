@@ -1,0 +1,949 @@
+{
+    "pizzas": [
+      {
+        "id": 1,
+        "product": "pizzas",
+        "name": "Cali Chicken Bacon Ranch",
+        "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663729718_28-mykaleidoscope-ru-p-pitstsa-chetire-sezona-oboi-30.jpg",
+        "rating": 2,
+        "ingredients": [
+          "Grilled chicken breast",
+          "ranch",
+          "smoked bacon",
+          "diced tomatoes",
+          "provolone and cheese made with 100% real mozzarella"
+        ],
+        "sizes": [
+          {
+            "name": "12 inch",
+            "price": 16.99
+          },
+          {
+            "name": "14 inch",
+            "price": 18.99
+          },
+          {
+            "name": "16 inch",
+            "price": 19.99
+          }
+        ],
+        "doughs": [
+          {
+            "name": "One Slice Cheese",
+            "price": 100
+          },
+          {
+            "name": "Deluxe Slice",
+            "price": 200
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "product": "pizzas",
+        "name": "Buffalo Chicken",
+        "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663729718_28-mykaleidoscope-ru-p-pitstsa-chetire-sezona-oboi-30.jpg",
+        "ingredients": [
+                "Grilled chicken breast", 
+                "fresh onions", 
+                "provolone",
+                "American cheese",
+                "cheddar",
+                "cheese made with 100% real mozzarella and drizzled with a hot buffalo sauce"
+            ],
+        "rating": 5,
+        "sizes": [
+            {
+                "name": "12 inch",
+                "price": 15.99
+            },
+            {
+                "name": "14 inch",
+                "price": 17.99
+            },
+            {
+                "name": "16 inch",
+                "price": 18.99
+            }
+        ],
+        "doughs": [
+          {
+            "name": "One Slice Cheese",
+            "price": 100
+          },
+          {
+            "name": "Deluxe Slice",
+            "price": 200
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "product": "pizzas",
+        "name": "Deluxe",
+        "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663729718_28-mykaleidoscope-ru-p-pitstsa-chetire-sezona-oboi-30.jpg",
+        "rating": 3,
+        "ingredients": [
+          "Pepperoni",
+          "Italian sausage",
+          "fresh green peppers",
+          "fresh mushrooms",
+          "fresh onions",
+          "provolone and cheese made with 100% real mozzarella"
+        ],
+        "sizes": [
+            {
+                "name": "12 inch",
+                "price": 17.99
+            },
+            {
+                "name": "14 inch",
+                "price": 20.99
+            },
+            {
+                "name": "16 inch",
+                "price": 22.99
+            }
+        ],
+        "doughs": [
+          {
+            "name": "One Slice Cheese",
+            "price": 100
+          },
+          {
+            "name": "Deluxe Slice",
+            "price": 200
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "product": "pizzas",
+        "name": "Honolulu Hawaiian",
+        "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663729718_28-mykaleidoscope-ru-p-pitstsa-chetire-sezona-oboi-30.jpg",
+        "ingredients": [
+                "Sliced ham", 
+                "smoked bacon", 
+                "pineapple",
+                "fresh green peppers",
+                "provolone and cheese made with 100% real mozzarella"
+            ],
+        "rating": 5,
+        "sizes": [
+            {
+                "name": "12 inch",
+                "price": 14.99
+            },
+            {
+                "name": "14 inch",
+                "price": 16.99
+            },
+            {
+                "name": "16 inch",
+                "price": 18.99
+            }
+        ],
+        "doughs": [
+          {
+            "name": "One Slice Cheese",
+            "price": 100
+          },
+          {
+            "name": "Deluxe Slice",
+            "price": 200
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "product": "pizzas",
+        "name": "Philly Cheese Steak",
+        "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663729718_28-mykaleidoscope-ru-p-pitstsa-chetire-sezona-oboi-30.jpg",
+        "ingredients": [
+                "Tender slices of steak", 
+                "fresh onions", 
+                "fresh green peppers",
+                "fresh mushrooms",
+                "provolone and American cheese"
+            ],
+        "rating": 5,
+        "sizes": [
+            {
+                "name": "12 inch",
+                "price": 16.99
+            },
+            {
+                "name": "14 inch",
+                "price": 19.99
+            },
+            {
+                "name": "16 inch",
+                "price": 22.99
+            }
+        ],
+        "doughs": [
+          {
+            "name": "One Slice Cheese",
+            "price": 100
+          },
+          {
+            "name": "Deluxe Slice",
+            "price": 200
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "product": "pizzas",
+        "name": "Pacific Veggie",
+        "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663729718_28-mykaleidoscope-ru-p-pitstsa-chetire-sezona-oboi-30.jpg",
+        "ingredients": [
+                "Fresh baby spinach", 
+                "fresh onions", 
+                "fresh mushrooms",
+                "tomatoes",
+                "black olives",
+                "feta",
+                "provolone",
+                "cheese made with 100% real mozzarella and sprinkled with a garlic herb seasoning"
+            ],
+        "rating": 5,
+        "sizes": [
+            {
+                "name": "12 inch",
+                "price": 13.99
+            },
+            {
+                "name": "14 inch",
+                "price": 15.99
+            },
+            {
+                "name": "16 inch",
+                "price": 16.99
+            }
+        ],
+        "doughs": [
+          {
+            "name": "One Slice Cheese",
+            "price": 100
+          },
+          {
+            "name": "Deluxe Slice",
+            "price": 200
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "product": "pizzas",
+        "name": "Ultimate Pepperoni",
+        "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663729718_28-mykaleidoscope-ru-p-pitstsa-chetire-sezona-oboi-30.jpg",
+        "ingredients": [
+                "Two layers of pepperoni sandwiched between provolone", 
+                "Parmesan-Asiago and cheese made with 100% real mozzarella then sprinkled with oregano"
+            ],
+        "rating": 5,
+        "sizes": [
+            {
+                "name": "12 inch",
+                "price": 16.99
+            },
+            {
+                "name": "14 inch",
+                "price": 19.99
+            },
+            {
+                "name": "16 inch",
+                "price": 20.99
+            }
+        ],
+        "doughs": [
+          {
+            "name": "One Slice Cheese",
+            "price": 100
+          },
+          {
+            "name": "Deluxe Slice",
+            "price": 200
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "product": "pizzas",
+        "name": "Memphis BBQ Chicken",
+        "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663729718_28-mykaleidoscope-ru-p-pitstsa-chetire-sezona-oboi-30.jpg",
+        "ingredients": [
+                "Grilled chicken breast", 
+                "oney BBQ sauce", 
+                "fresh onions",
+                "cheddar",
+                "provolone and cheese made with 100% real mozzarella"
+            ],
+        "rating": 5,
+        "sizes": [
+            {
+                "name": "12 inch",
+                "price": 18.99
+            },
+            {
+                "name": "14 inch",
+                "price": 20.99
+            },
+            {
+                "name": "16 inch",
+                "price": 22.99
+            }
+        ],
+        "doughs": [
+          {
+            "name": "One Slice Cheese",
+            "price": 100
+          },
+          {
+            "name": "Deluxe Slice",
+            "price": 200
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "product": "pizzas",
+        "name": "Wisconsin 6 Cheese",
+        "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663729718_28-mykaleidoscope-ru-p-pitstsa-chetire-sezona-oboi-30.jpg",
+        "ingredients": [
+                "Feta", 
+                "provolone", 
+                "cheddar",
+                "Parmesan-Asiago",
+                "cheese made with 100% real mozzarella and sprinkled with oregano"
+            ],
+        "rating": 5,
+        "sizes": [
+            {
+                "name": "12 inch",
+                "price": 15.99
+            },
+            {
+                "name": "14 inch",
+                "price": 17.99
+            },
+            {
+                "name": "16 inch",
+                "price": 19.99
+            }
+        ],
+        "doughs": [
+          {
+            "name": "One Slice Cheese",
+            "price": 100
+          },
+          {
+            "name": "Deluxe Slice",
+            "price": 200
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "product": "pizzas",
+        "name": "Spinach & Feta",
+        "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663729718_28-mykaleidoscope-ru-p-pitstsa-chetire-sezona-oboi-30.jpg",
+        "ingredients": [
+                "Creamy Alfredo sauce", 
+                "fresh spinach", 
+                "fresh onions",
+                "feta",
+                "Parmesan-Asiago, provolone and cheese made with 100% real mozzarella"
+            ],
+        "rating": 5,
+        "sizes": [
+            {
+                "name": "12 inch",
+                "price": 13.99
+            },
+            {
+                "name": "14 inch",
+                "price": 15.99
+            },
+            {
+                "name": "16 inch",
+                "price": 17.99
+            }
+        ],
+        "doughs": [
+          {
+            "name": "One Slice Cheese",
+            "price": 100
+          },
+          {
+            "name": "Deluxe Slice",
+            "price": 200
+          }
+        ]
+      }
+    ],
+    "rolls": [
+      {
+        "id": 1,
+        "product": "rolls",
+        "rating": 1,
+        "name": "Summer Breeze",
+        "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663829084_46-mykaleidoscope-ru-p-firmennie-rolli-yeda-vkontakte-52.jpg",
+        "pieces": [
+          {
+            "name": "6 pcs.",
+            "price": 10.99
+          },
+          {
+            "name": "10 pcs.",
+            "price": 16.99
+          }
+        ],
+        "ingredients": [
+                "Tuna", 
+                "Snapper",
+                "Salmon", 
+                "Masago",
+                "Scallion",
+                "Crab",
+                "Avocado",
+                "Radish wrap",
+                "Wasabi Vinegar Sauce"
+            ]
+      },
+      {
+        "id": 2,
+        "product": "rolls",
+        "rating": 3,
+        "name": "Tunacado Wrap",
+        "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663829084_46-mykaleidoscope-ru-p-firmennie-rolli-yeda-vkontakte-52.jpg",
+        "pieces": [
+            {
+                "name": "6 pcs.",
+                "price": 9.99
+            },
+            {
+                "name": "10 pcs.",
+                "price": 15.99
+            }
+        ],
+        "ingredients": [
+            "Tuna Wrapped Avocado", 
+            "Topped Jalapeno",
+            "Cilantro Wasabi Tobiko", 
+            "Ponzo Sauce"
+        ]
+      },
+      {
+        "id": 3,
+        "product": "rolls",
+        "name": "Hurricane Tuna",
+        "rating": 4,
+        "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663829084_46-mykaleidoscope-ru-p-firmennie-rolli-yeda-vkontakte-52.jpg",
+        "pieces": [
+            {
+                "name": "6 pcs.",
+                "price": 11.99
+            },
+            {
+                "name": "10 pcs.",
+                "price": 16.99
+            }
+        ],
+        "ingredients": [
+            "Tuna", 
+            "Scallion",
+            "Cucumber", 
+            "Crab",
+            "Stick",
+            "Masago",
+            "Wasabi Sauce"
+        ]
+      },
+      {
+        "id": 4,
+        "product": "rolls",
+        "name": "Mother of All Roll",
+        "rating": 2,
+        "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663829084_46-mykaleidoscope-ru-p-firmennie-rolli-yeda-vkontakte-52.jpg",
+        "pieces": [
+            {
+                "name": "6 pcs.",
+                "price": 13.99
+            },
+            {
+                "name": "10 pcs.",
+                "price": 18.99
+            }
+        ],
+        "ingredients": [
+            "Shrimp Tempura", 
+            "Crab Salad",
+            "Topped Eel", 
+            "Avocado",
+            "Garnished Scallion",
+            "Tobiko",
+            "House Sauce"
+        ]
+      },
+      {
+        "id": 5,
+        "product": "rolls",
+        "name": "Hot Tuna Roll",
+        "rating": 5,
+        "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663829084_46-mykaleidoscope-ru-p-firmennie-rolli-yeda-vkontakte-52.jpg",
+        "pieces": [
+            {
+                "name": "6 pcs.",
+                "price": 13.99
+            },
+            {
+                "name": "10 pcs.",
+                "price": 17.99
+            }
+        ],
+        "ingredients": [
+            "Spicy Tuna", 
+            "Crunch Bits Topped Tuna",
+            "Avocado", 
+            "Garnished Scallion",
+            "Tobiko",
+            "Shaved Fish-Flak",
+            "Mayo Sauce"
+        ]
+      },
+      {
+        "id": 6,
+        "product": "rolls",
+        "name": "Tequila Sunrise",
+        "rating": 4,
+        "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663829084_46-mykaleidoscope-ru-p-firmennie-rolli-yeda-vkontakte-52.jpg",
+        "pieces": [
+            {
+                "name": "6 pcs.",
+                "price": 15.99
+            },
+            {
+                "name": "10 pcs.",
+                "price": 18.99
+            }
+        ],
+        "ingredients": [
+            "Crab Salad",
+            "Cucumber",
+            "Topped Salmon",
+            "Avocado",
+            "Garnished Scallion",
+            "Tobiko",
+            "Balsamic Vinegar Sauce"
+        ]
+      },
+      {
+        "id": 7,
+        "product": "rolls",
+        "name": "Spicy Chirashi",
+        "rating": 2,
+        "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663829084_46-mykaleidoscope-ru-p-firmennie-rolli-yeda-vkontakte-52.jpg",
+        "pieces": [
+            {
+                "name": "6 pcs.",
+                "price": 14.99
+            },
+            {
+                "name": "10 pcs.",
+                "price": 17.99
+            }
+        ],
+        "ingredients": [
+            "Shrimp Tempura Roll Topped Assort Fish",
+            "Seaweed Salad",
+            "Garnished Crispy Bit",
+            "Mayo Sauce"
+        ]
+      },
+      {
+        "id": 8,
+        "product": "rolls",
+        "name": "Lobzilla Roll",
+        "rating": 2,
+        "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663829084_46-mykaleidoscope-ru-p-firmennie-rolli-yeda-vkontakte-52.jpg",
+        "pieces": [
+            {
+                "name": "6 pcs.",
+                "price": 12.99
+            },
+            {
+                "name": "10 pcs.",
+                "price": 15.99
+            }
+        ],
+        "ingredients": [
+            "Tempura Lobster",
+            "Asparagus Mozarella Cheese Garnished Tobiko",
+            "Nori Powder",
+            "House Sauce"
+        ]
+      },
+      {
+        "id": 9,
+        "product": "rolls",
+        "name": "Beyond the Rainbow Roll",
+        "rating": 2,
+        "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663829084_46-mykaleidoscope-ru-p-firmennie-rolli-yeda-vkontakte-52.jpg",
+        "pieces": [
+            {
+                "name": "6 pcs.",
+                "price": 16.99
+            },
+            {
+                "name": "10 pcs.",
+                "price": 19.99
+            }
+        ],
+        "ingredients": [
+            "Tuna",
+            "Yellow Tail",
+            "Salmon",
+            "Snapper",
+            "Shrimp",
+            "Eel",
+            "Avocado On Top Of California Roll",
+            "Garnished Scallion",
+            "Tobiko"
+        ]
+      },
+      {
+        "id": 10,
+        "product": "rolls",
+        "name": "Mount Rush-More",
+        "rating": 2,
+        "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663829084_46-mykaleidoscope-ru-p-firmennie-rolli-yeda-vkontakte-52.jpg",
+        "pieces": [
+            {
+                "name": "6 pcs.",
+                "price": 13.99
+            },
+            {
+                "name": "10 pcs.",
+                "price": 17.99
+            }
+        ],
+        "ingredients": [
+            "Salmon",
+            "Snapper",
+            "Crab Baked Over Spicy Mayo Sauce On Top Of California Roll"
+        ]
+      }
+    ],
+    "burgers": [
+      {
+        "id": 1,
+        "product": "burgers",
+        "rating": 1,
+        "name": "Texas Double Whopper",
+        "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663829084_46-mykaleidoscope-ru-p-firmennie-rolli-yeda-vkontakte-52.jpg",
+        "pieces": [
+          {
+            "name": "1 pcs.",
+            "price": 8.59
+          }
+        ],
+        "ingredients": [
+                "Two ¼ lb.* flame-grilled beef patties topped with melty American crispy bacon", 
+                "juicy tomatoes",
+                "crisp lettuce", 
+                "sliced white onions",
+                "runchy pickles",
+                "jalapenos",
+                "creamy mayonnaise",
+                "yellow mustard on a toasted sesame seed bun"
+            ]
+      },
+      {
+        "id": 2,
+        "product": "burgers",
+        "rating": 3,
+        "name": "Tunacado Wrap",
+        "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663829084_46-mykaleidoscope-ru-p-firmennie-rolli-yeda-vkontakte-52.jpg",
+        "pieces": [
+            {
+                "name": "6 pcs.",
+                "price": 9.99
+            },
+            {
+                "name": "10 pcs.",
+                "price": 15.99
+            }
+        ],
+        "ingredients": [
+            "Tuna Wrapped Avocado", 
+            "Topped Jalapeno",
+            "Cilantro Wasabi Tobiko", 
+            "Ponzo Sauce"
+        ]
+      },
+      {
+        "id": 3,
+        "product": "burgers",
+        "name": "Hurricane Tuna",
+        "rating": 4,
+        "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663829084_46-mykaleidoscope-ru-p-firmennie-rolli-yeda-vkontakte-52.jpg",
+        "pieces": [
+            {
+                "name": "6 pcs.",
+                "price": 11.99
+            },
+            {
+                "name": "10 pcs.",
+                "price": 16.99
+            }
+        ],
+        "ingredients": [
+            "Tuna", 
+            "Scallion",
+            "Cucumber", 
+            "Crab",
+            "Stick",
+            "Masago",
+            "Wasabi Sauce"
+        ]
+      },
+      {
+        "id": 4,
+        "product": "burgers",
+        "name": "Mother of All Roll",
+        "rating": 2,
+        "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663829084_46-mykaleidoscope-ru-p-firmennie-rolli-yeda-vkontakte-52.jpg",
+        "pieces": [
+            {
+                "name": "6 pcs.",
+                "price": 13.99
+            },
+            {
+                "name": "10 pcs.",
+                "price": 18.99
+            }
+        ],
+        "ingredients": [
+            "Shrimp Tempura", 
+            "Crab Salad",
+            "Topped Eel", 
+            "Avocado",
+            "Garnished Scallion",
+            "Tobiko",
+            "House Sauce"
+        ]
+      },
+      {
+        "id": 5,
+        "product": "burgers",
+        "name": "Hot Tuna Roll",
+        "rating": 5,
+        "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663829084_46-mykaleidoscope-ru-p-firmennie-rolli-yeda-vkontakte-52.jpg",
+        "pieces": [
+            {
+                "name": "6 pcs.",
+                "price": 13.99
+            },
+            {
+                "name": "10 pcs.",
+                "price": 17.99
+            }
+        ],
+        "ingredients": [
+            "Spicy Tuna", 
+            "Crunch Bits Topped Tuna",
+            "Avocado", 
+            "Garnished Scallion",
+            "Tobiko",
+            "Shaved Fish-Flak",
+            "Mayo Sauce"
+        ]
+      },
+      {
+        "id": 6,
+        "product": "burgers",
+        "name": "Tequila Sunrise",
+        "rating": 4,
+        "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663829084_46-mykaleidoscope-ru-p-firmennie-rolli-yeda-vkontakte-52.jpg",
+        "pieces": [
+            {
+                "name": "6 pcs.",
+                "price": 15.99
+            },
+            {
+                "name": "10 pcs.",
+                "price": 18.99
+            }
+        ],
+        "ingredients": [
+            "Crab Salad",
+            "Cucumber",
+            "Topped Salmon",
+            "Avocado",
+            "Garnished Scallion",
+            "Tobiko",
+            "Balsamic Vinegar Sauce"
+        ]
+      },
+      {
+        "id": 7,
+        "product": "burgers",
+        "name": "Spicy Chirashi",
+        "rating": 2,
+        "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663829084_46-mykaleidoscope-ru-p-firmennie-rolli-yeda-vkontakte-52.jpg",
+        "pieces": [
+            {
+                "name": "6 pcs.",
+                "price": 14.99
+            },
+            {
+                "name": "10 pcs.",
+                "price": 17.99
+            }
+        ],
+        "ingredients": [
+            "Shrimp Tempura Roll Topped Assort Fish",
+            "Seaweed Salad",
+            "Garnished Crispy Bit",
+            "Mayo Sauce"
+        ]
+      },
+      {
+        "id": 8,
+        "product": "burgers",
+        "name": "Lobzilla Roll",
+        "rating": 2,
+        "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663829084_46-mykaleidoscope-ru-p-firmennie-rolli-yeda-vkontakte-52.jpg",
+        "pieces": [
+            {
+                "name": "6 pcs.",
+                "price": 12.99
+            },
+            {
+                "name": "10 pcs.",
+                "price": 15.99
+            }
+        ],
+        "ingredients": [
+            "Tempura Lobster",
+            "Asparagus Mozarella Cheese Garnished Tobiko",
+            "Nori Powder",
+            "House Sauce"
+        ]
+      },
+      {
+        "id": 9,
+        "product": "burgers",
+        "name": "Beyond the Rainbow Roll",
+        "rating": 2,
+        "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663829084_46-mykaleidoscope-ru-p-firmennie-rolli-yeda-vkontakte-52.jpg",
+        "pieces": [
+            {
+                "name": "6 pcs.",
+                "price": 16.99
+            },
+            {
+                "name": "10 pcs.",
+                "price": 19.99
+            }
+        ],
+        "ingredients": [
+            "Tuna",
+            "Yellow Tail",
+            "Salmon",
+            "Snapper",
+            "Shrimp",
+            "Eel",
+            "Avocado On Top Of California Roll",
+            "Garnished Scallion",
+            "Tobiko"
+        ]
+      },
+      {
+        "id": 10,
+        "product": "burgers",
+        "name": "Mount Rush-More",
+        "rating": 2,
+        "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663829084_46-mykaleidoscope-ru-p-firmennie-rolli-yeda-vkontakte-52.jpg",
+        "pieces": [
+            {
+                "name": "6 pcs.",
+                "price": 13.99
+            },
+            {
+                "name": "10 pcs.",
+                "price": 17.99
+            }
+        ],
+        "ingredients": [
+            "Salmon",
+            "Snapper",
+            "Crab Baked Over Spicy Mayo Sauce On Top Of California Roll"
+        ]
+      }
+    ],
+    "other": [
+      {
+        "id": 1,
+        "rating": 3,
+        "product": "other",
+        "name": "Coca-Cola",
+        "photo": "https://fikiwiki.com/uploads/posts/2022-02/1644920268_3-fikiwiki-com-p-krasivie-kartinki-koka-kola-3.jpg",
+        "size": "12 oz",
+        "price": 3.99,
+        "description": "Soft Drink"
+      },
+      {
+        "id": 2,
+        "rating": 5,
+        "product": "other",
+        "name": "Sprite",
+        "photo": "https://fikiwiki.com/uploads/posts/2022-02/1644920268_3-fikiwiki-com-p-krasivie-kartinki-koka-kola-3.jpg",
+        "size": "12 oz",
+        "price": 3.99,
+        "description": "Soft Drink"
+      },
+      {
+        "id": 3,
+        "rating": 2,
+        "product": "other",
+        "name": "Fanta",
+        "photo": "https://fikiwiki.com/uploads/posts/2022-02/1644920268_3-fikiwiki-com-p-krasivie-kartinki-koka-kola-3.jpg",
+        "size": "12 oz",
+        "price": 3.99,
+        "description": "Soft Drink"
+      },
+      {
+        "id": 4,
+        "rating": 4,
+        "product": "other",
+        "name": "Pepsi",
+        "photo": "https://fikiwiki.com/uploads/posts/2022-02/1644920268_3-fikiwiki-com-p-krasivie-kartinki-koka-kola-3.jpg",
+        "size": "12 oz",
+        "price": 3.99,
+        "description": "Soft Drink"
+      },
+      {
+        "id": 5,
+        "rating": 3,
+        "product": "other",
+        "name": " Black Tea",
+        "photo": "https://fikiwiki.com/uploads/posts/2022-02/1644920268_3-fikiwiki-com-p-krasivie-kartinki-koka-kola-3.jpg",
+        "size": "12 oz",
+        "price": 4.99,
+        "description": "Black Cold Tea"
+      },
+      {
+        "id": 6,
+        "rating": 2,
+        "product": "other",
+        "name": "Green Tea",
+        "photo": "https://fikiwiki.com/uploads/posts/2022-02/1644920268_3-fikiwiki-com-p-krasivie-kartinki-koka-kola-3.jpg",
+        "size": "12 oz",
+        "price": 4.99,
+        "description": "Green Cold Tea"
+      }
+    ]
+  }
