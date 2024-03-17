@@ -2,8 +2,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 const params = {
   _limit: 4,
-  _sort: "rating",
-//   _order: "desc"
+  _sort: "-rating",
 };
 
 export const rtkApi = createApi({

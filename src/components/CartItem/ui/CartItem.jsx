@@ -3,10 +3,17 @@ import cls from './CartItem.module.scss';
 import { productsName } from '@/const/const';
 
 const CartItem = (props) => {
-    const {id, img = '', title = '', product = '', ingredients = [], description = ''} = props;
+    const {
+        id, 
+        img = '', 
+        title = '', 
+        product = '', 
+        ingredients = [], 
+        description = '', 
+        price = 0
+    } = props;
 
-    const ingredientsText = ingredients.join(', ')
-    console.log('ingredients', ingredientsText);
+    const ingredientsText = ingredients.join(', ');
 
     return (
         <article className={cls.card}>
@@ -23,8 +30,7 @@ const CartItem = (props) => {
 
                 <div className={cls.footer}>
                     <Button border className={cls.button}>
-                        Choose
-                        <span>From $0</span>
+                        <span>From ${price}</span>
                     </Button>
                 </div>
             </div>

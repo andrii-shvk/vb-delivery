@@ -5,7 +5,7 @@
         "product": "pizzas",
         "name": "Cali Chicken Bacon Ranch",
         "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663729718_28-mykaleidoscope-ru-p-pitstsa-chetire-sezona-oboi-30.jpg",
-        "rating": 2,
+        "rating": 4,
         "ingredients": [
           "Grilled chicken breast",
           "ranch",
@@ -30,11 +30,11 @@
         "doughs": [
           {
             "name": "One Slice Cheese",
-            "price": 100
+            "price": 2.00
           },
           {
             "name": "Deluxe Slice",
-            "price": 200
+            "price": 3.00
           }
         ]
       },
@@ -69,11 +69,11 @@
         "doughs": [
           {
             "name": "One Slice Cheese",
-            "price": 100
+            "price": 2.00
           },
           {
             "name": "Deluxe Slice",
-            "price": 200
+            "price": 3.00
           }
         ]
       },
@@ -82,7 +82,7 @@
         "product": "pizzas",
         "name": "Deluxe",
         "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663729718_28-mykaleidoscope-ru-p-pitstsa-chetire-sezona-oboi-30.jpg",
-        "rating": 3,
+        "rating": 5,
         "ingredients": [
           "Pepperoni",
           "Italian sausage",
@@ -108,11 +108,11 @@
         "doughs": [
           {
             "name": "One Slice Cheese",
-            "price": 100
+            "price": 2.00
           },
           {
             "name": "Deluxe Slice",
-            "price": 200
+            "price": 3.00
           }
         ]
       },
@@ -128,7 +128,7 @@
                 "fresh green peppers",
                 "provolone and cheese made with 100% real mozzarella"
             ],
-        "rating": 5,
+        "rating": 4,
         "sizes": [
             {
                 "name": "12 inch",
@@ -146,11 +146,11 @@
         "doughs": [
           {
             "name": "One Slice Cheese",
-            "price": 100
+            "price": 2.00
           },
           {
             "name": "Deluxe Slice",
-            "price": 200
+            "price": 3.00
           }
         ]
       },
@@ -184,11 +184,11 @@
         "doughs": [
           {
             "name": "One Slice Cheese",
-            "price": 100
+            "price": 2.00
           },
           {
             "name": "Deluxe Slice",
-            "price": 200
+            "price": 3.00
           }
         ]
       },
@@ -207,7 +207,7 @@
                 "provolone",
                 "cheese made with 100% real mozzarella and sprinkled with a garlic herb seasoning"
             ],
-        "rating": 5,
+        "rating": 4,
         "sizes": [
             {
                 "name": "12 inch",
@@ -225,11 +225,11 @@
         "doughs": [
           {
             "name": "One Slice Cheese",
-            "price": 100
+            "price": 2.00
           },
           {
             "name": "Deluxe Slice",
-            "price": 200
+            "price": 3.00
           }
         ]
       },
@@ -260,11 +260,11 @@
         "doughs": [
           {
             "name": "One Slice Cheese",
-            "price": 100
+            "price": 2.00
           },
           {
             "name": "Deluxe Slice",
-            "price": 200
+            "price": 3.00
           }
         ]
       },
@@ -280,7 +280,7 @@
                 "cheddar",
                 "provolone and cheese made with 100% real mozzarella"
             ],
-        "rating": 5,
+        "rating": 4,
         "sizes": [
             {
                 "name": "12 inch",
@@ -298,11 +298,11 @@
         "doughs": [
           {
             "name": "One Slice Cheese",
-            "price": 100
+            "price": 2.00
           },
           {
             "name": "Deluxe Slice",
-            "price": 200
+            "price": 3.00
           }
         ]
       },
@@ -318,7 +318,7 @@
                 "Parmesan-Asiago",
                 "cheese made with 100% real mozzarella and sprinkled with oregano"
             ],
-        "rating": 5,
+        "rating": 3,
         "sizes": [
             {
                 "name": "12 inch",
@@ -336,11 +336,11 @@
         "doughs": [
           {
             "name": "One Slice Cheese",
-            "price": 100
+            "price": 2.00
           },
           {
             "name": "Deluxe Slice",
-            "price": 200
+            "price": 3.00
           }
         ]
       },
@@ -356,7 +356,7 @@
                 "feta",
                 "Parmesan-Asiago, provolone and cheese made with 100% real mozzarella"
             ],
-        "rating": 5,
+        "rating": 4,
         "sizes": [
             {
                 "name": "12 inch",
@@ -374,11 +374,11 @@
         "doughs": [
           {
             "name": "One Slice Cheese",
-            "price": 100
+            "price": 2.00
           },
           {
             "name": "Deluxe Slice",
-            "price": 200
+            "price": 3.00
           }
         ]
       }

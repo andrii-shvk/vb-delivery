@@ -1,7 +1,8 @@
 .products {
     display: flex;
-    flex: column;
+    flex-direction: column;
     gap: 30px;
+    margin-bottom: 100px;
 }
 .title {
     font: var(--font-l);
