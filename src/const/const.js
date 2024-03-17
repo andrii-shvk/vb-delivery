@@ -4,3 +4,9 @@ export const Theme = {
 }
 
 export const LOCALSTORAGE_THEME_KEY = 'theme';
+
+export const productsName = {
+    PIZZAS: 'pizzas',
+    BURGERS: 'burgers',
+    OTHERS: 'other'
+}

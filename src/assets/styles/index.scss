@@ -23,6 +23,13 @@ p {
     flex-direction: column;
 }
 
+// Errors
+.error {
+  text-align: center;
+  color: var(--primary-color);
+  font: var(--font-l);
+}
+
 // PageLoader 
 
 .lds-spinner {

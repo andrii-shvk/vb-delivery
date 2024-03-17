@@ -664,223 +664,97 @@
         "id": 2,
         "product": "burgers",
         "rating": 3,
-        "name": "Tunacado Wrap",
+        "name": "Whopper",
         "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663829084_46-mykaleidoscope-ru-p-firmennie-rolli-yeda-vkontakte-52.jpg",
         "pieces": [
-            {
-                "name": "6 pcs.",
-                "price": 9.99
-            },
-            {
-                "name": "10 pcs.",
-                "price": 15.99
-            }
+          {
+            "name": "1 pcs.",
+            "price": 4.59
+          }
         ],
         "ingredients": [
-            "Tuna Wrapped Avocado", 
-            "Topped Jalapeno",
-            "Cilantro Wasabi Tobiko", 
-            "Ponzo Sauce"
+            "The Whopper Sandwich is a ¼ lb** of flame-grilled beef with juicy tomatoes", 
+            "crisp lettuce",
+            "creamy mayonnaise", 
+            "ketchup",
+            "crunchy pickles",
+            "sliced white onions on a toasted sesame seed bun"
         ]
       },
       {
         "id": 3,
         "product": "burgers",
-        "name": "Hurricane Tuna",
+        "name": "Impossible™ Whopper",
         "rating": 4,
         "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663829084_46-mykaleidoscope-ru-p-firmennie-rolli-yeda-vkontakte-52.jpg",
         "pieces": [
-            {
-                "name": "6 pcs.",
-                "price": 11.99
-            },
-            {
-                "name": "10 pcs.",
-                "price": 16.99
-            }
+          {
+            "name": "1 pcs.",
+            "price": 6.59
+          }
         ],
         "ingredients": [
-            "Tuna", 
-            "Scallion",
-            "Cucumber", 
-            "Crab",
-            "Stick",
-            "Masago",
-            "Wasabi Sauce"
+            "A flame-grilled", 
+            "plant-based patty with juicy tomatoes",
+            "crisp lettuce", 
+            "creamy mayonnaise",
+            "ketchup",
+            "crunchy pickles"
         ]
       },
       {
         "id": 4,
         "product": "burgers",
-        "name": "Mother of All Roll",
+        "name": "Bacon King",
         "rating": 2,
         "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663829084_46-mykaleidoscope-ru-p-firmennie-rolli-yeda-vkontakte-52.jpg",
         "pieces": [
-            {
-                "name": "6 pcs.",
-                "price": 13.99
-            },
-            {
-                "name": "10 pcs.",
-                "price": 18.99
-            }
+          {
+            "name": "1 pcs.",
+            "price": 9.09
+          }
         ],
         "ingredients": [
-            "Shrimp Tempura", 
-            "Crab Salad",
-            "Topped Eel", 
-            "Avocado",
-            "Garnished Scallion",
-            "Tobiko",
-            "House Sauce"
+            "Two 1/4 lb* flame-grilled beef patties with crispy bacon", 
+            "melted American cheese",
+            "ketchup"
         ]
       },
       {
         "id": 5,
         "product": "burgers",
-        "name": "Hot Tuna Roll",
+        "name": "Hamburger",
         "rating": 5,
         "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663829084_46-mykaleidoscope-ru-p-firmennie-rolli-yeda-vkontakte-52.jpg",
         "pieces": [
-            {
-                "name": "6 pcs.",
-                "price": 13.99
-            },
-            {
-                "name": "10 pcs.",
-                "price": 17.99
-            }
+          {
+            "name": "1 pcs.",
+            "price": 3.59
+          }
         ],
         "ingredients": [
-            "Spicy Tuna", 
-            "Crunch Bits Topped Tuna",
-            "Avocado", 
-            "Garnished Scallion",
-            "Tobiko",
-            "Shaved Fish-Flak",
-            "Mayo Sauce"
+            "A flame-grilled beef patty with crunchy pickles", 
+            "yellow mustard",
+            "and ketchup on a toasted sesame seed bun"
         ]
       },
       {
         "id": 6,
         "product": "burgers",
-        "name": "Tequila Sunrise",
+        "name": "Cheeseburger",
         "rating": 4,
         "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663829084_46-mykaleidoscope-ru-p-firmennie-rolli-yeda-vkontakte-52.jpg",
         "pieces": [
-            {
-                "name": "6 pcs.",
-                "price": 15.99
-            },
-            {
-                "name": "10 pcs.",
-                "price": 18.99
-            }
+          {
+            "name": "1 pcs.",
+            "price": 2.39
+          }
         ],
         "ingredients": [
-            "Crab Salad",
-            "Cucumber",
-            "Topped Salmon",
-            "Avocado",
-            "Garnished Scallion",
-            "Tobiko",
-            "Balsamic Vinegar Sauce"
-        ]
-      },
-      {
-        "id": 7,
-        "product": "burgers",
-        "name": "Spicy Chirashi",
-        "rating": 2,
-        "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663829084_46-mykaleidoscope-ru-p-firmennie-rolli-yeda-vkontakte-52.jpg",
-        "pieces": [
-            {
-                "name": "6 pcs.",
-                "price": 14.99
-            },
-            {
-                "name": "10 pcs.",
-                "price": 17.99
-            }
-        ],
-        "ingredients": [
-            "Shrimp Tempura Roll Topped Assort Fish",
-            "Seaweed Salad",
-            "Garnished Crispy Bit",
-            "Mayo Sauce"
-        ]
-      },
-      {
-        "id": 8,
-        "product": "burgers",
-        "name": "Lobzilla Roll",
-        "rating": 2,
-        "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663829084_46-mykaleidoscope-ru-p-firmennie-rolli-yeda-vkontakte-52.jpg",
-        "pieces": [
-            {
-                "name": "6 pcs.",
-                "price": 12.99
-            },
-            {
-                "name": "10 pcs.",
-                "price": 15.99
-            }
-        ],
-        "ingredients": [
-            "Tempura Lobster",
-            "Asparagus Mozarella Cheese Garnished Tobiko",
-            "Nori Powder",
-            "House Sauce"
-        ]
-      },
-      {
-        "id": 9,
-        "product": "burgers",
-        "name": "Beyond the Rainbow Roll",
-        "rating": 2,
-        "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663829084_46-mykaleidoscope-ru-p-firmennie-rolli-yeda-vkontakte-52.jpg",
-        "pieces": [
-            {
-                "name": "6 pcs.",
-                "price": 16.99
-            },
-            {
-                "name": "10 pcs.",
-                "price": 19.99
-            }
-        ],
-        "ingredients": [
-            "Tuna",
-            "Yellow Tail",
-            "Salmon",
-            "Snapper",
-            "Shrimp",
-            "Eel",
-            "Avocado On Top Of California Roll",
-            "Garnished Scallion",
-            "Tobiko"
-        ]
-      },
-      {
-        "id": 10,
-        "product": "burgers",
-        "name": "Mount Rush-More",
-        "rating": 2,
-        "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663829084_46-mykaleidoscope-ru-p-firmennie-rolli-yeda-vkontakte-52.jpg",
-        "pieces": [
-            {
-                "name": "6 pcs.",
-                "price": 13.99
-            },
-            {
-                "name": "10 pcs.",
-                "price": 17.99
-            }
-        ],
-        "ingredients": [
-            "Salmon",
-            "Snapper",
-            "Crab Baked Over Spicy Mayo Sauce On Top Of California Roll"
+            "A flame-grilled beef patty topped with melted American cheese",
+            "crunchy pickles",
+            "yellow mustard",
+            "and ketchup on a toasted sesame seed bun"
         ]
       }
     ],
