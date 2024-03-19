@@ -1,21 +1,28 @@
 import { useDispatch, useSelector } from 'react-redux';
-import cls from './PizzasPage.module.scss';
 import { useEffect } from 'react';
-import { fetchPizza } from '@/redux/pizzas/services/fetchPizza';
 import { getPizza, getPizzaError, getPizzaLoading } from '@/redux/pizzas/selectors/pizzaSelectors';
 import { ProductLayout } from '@/layouts/ProductLayout';
 import { calcMinPricePizza } from '@/utils/calcMinPrice';
 import { CartItem } from '@/components/CartItem';
+import { fetchNextPizzaPage } from '@/redux/pizzas/services/fetchNextPizzaPage';
+import { useInView } from 'react-intersection-observer';
 
 const PizzasPage = () => {
     const pizza = useSelector(getPizza);
-    // const loading = useSelector(getPizzaLoading);
+    const loading = useSelector(getPizzaLoading);
     const error = useSelector(getPizzaError);
 
+    const { ref, inView } = useInView({
+        threshold: 1,
+    });
+
     const dispatch = useDispatch();
+
     useEffect(() => {
-        dispatch(fetchPizza())
-    }, [dispatch]);
+        if (!error) {
+            dispatch(fetchNextPizzaPage())
+        }
+    }, [dispatch, error, inView]);
 
     if (error) {
         return <div>{error}</div>
@@ -35,7 +42,10 @@ const PizzasPage = () => {
     })
 
     return (
-        <ProductLayout header={'Pizza'} item={item} />
+        <>
+            <ProductLayout header={'Pizza'} item=   {item} />
+            {!loading && <div ref={ref} />}
+        </>
     );
 }
  

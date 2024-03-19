@@ -25,9 +25,8 @@ const ProductTape = (props) => {
                     <CartItem {...props} ingredients={el.ingredients} price={minPricePizza}/>
             )
             case productsName.BURGERS:
-                const minPriceBurgers = el.pieces.map(el => el.price);
                 return (
-                    <CartItem {...props} ingredients={el.ingredients} price={minPriceBurgers} />
+                    <CartItem {...props} ingredients={el.ingredients} price={el.price} />
             )
             case productsName.OTHERS:
                 return (

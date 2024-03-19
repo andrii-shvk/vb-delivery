@@ -643,12 +643,11 @@
         "rating": 1,
         "name": "Texas Double Whopper",
         "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663829084_46-mykaleidoscope-ru-p-firmennie-rolli-yeda-vkontakte-52.jpg",
-        "pieces": [
+        "pieces": 
           {
             "name": "1 pcs.",
             "price": 8.59
-          }
-        ],
+          },
         "ingredients": [
                 "Two ¼ lb.* flame-grilled beef patties topped with melty American crispy bacon", 
                 "juicy tomatoes",
@@ -666,12 +665,11 @@
         "rating": 3,
         "name": "Whopper",
         "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663829084_46-mykaleidoscope-ru-p-firmennie-rolli-yeda-vkontakte-52.jpg",
-        "pieces": [
+        "pieces": 
           {
             "name": "1 pcs.",
             "price": 4.59
-          }
-        ],
+          },
         "ingredients": [
             "The Whopper Sandwich is a ¼ lb** of flame-grilled beef with juicy tomatoes", 
             "crisp lettuce",
@@ -687,12 +685,11 @@
         "name": "Impossible™ Whopper",
         "rating": 4,
         "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663829084_46-mykaleidoscope-ru-p-firmennie-rolli-yeda-vkontakte-52.jpg",
-        "pieces": [
+        "pieces": 
           {
             "name": "1 pcs.",
             "price": 6.59
-          }
-        ],
+          },
         "ingredients": [
             "A flame-grilled", 
             "plant-based patty with juicy tomatoes",
@@ -708,12 +705,11 @@
         "name": "Bacon King",
         "rating": 2,
         "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663829084_46-mykaleidoscope-ru-p-firmennie-rolli-yeda-vkontakte-52.jpg",
-        "pieces": [
+        "pieces": 
           {
             "name": "1 pcs.",
             "price": 9.09
-          }
-        ],
+          },
         "ingredients": [
             "Two 1/4 lb* flame-grilled beef patties with crispy bacon", 
             "melted American cheese",
@@ -726,12 +722,11 @@
         "name": "Hamburger",
         "rating": 5,
         "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663829084_46-mykaleidoscope-ru-p-firmennie-rolli-yeda-vkontakte-52.jpg",
-        "pieces": [
+        "pieces": 
           {
             "name": "1 pcs.",
             "price": 3.59
-          }
-        ],
+          },
         "ingredients": [
             "A flame-grilled beef patty with crunchy pickles", 
             "yellow mustard",
@@ -744,12 +739,11 @@
         "name": "Cheeseburger",
         "rating": 4,
         "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663829084_46-mykaleidoscope-ru-p-firmennie-rolli-yeda-vkontakte-52.jpg",
-        "pieces": [
+        "pieces": 
           {
             "name": "1 pcs.",
-            "price": 2.39
-          }
-        ],
+            "price": 2.59
+          },
         "ingredients": [
             "A flame-grilled beef patty topped with melted American cheese",
             "crunchy pickles",

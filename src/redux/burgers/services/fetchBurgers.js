@@ -1,17 +1,17 @@
 import { $api } from "@/api/api";
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import { getPizzaLimit, getPizzaPage } from "../selectors/pizzaSelectors";
+import { getBurgersLimit, getBurgersPage } from "../selectors/burgerSelectors";
 
-export const fetchPizza = createAsyncThunk(
-  "pizza/fetchPizza",
+export const fetchBurgers = createAsyncThunk(
+  "burgers/fetchBurgers",
   async (_, thunkAPI) => {
     const {rejectWithValue, getState} = thunkAPI;
     console.log('getState', getState());
-    const page = getPizzaPage(getState());
-    const limit = getPizzaLimit(getState());
+    const page = getBurgersPage(getState());
+    const limit = getBurgersLimit(getState());
     console.log('page', page);
     try {
-      const response = await $api.get(`/pizzas`, {
+      const response = await $api.get(`/burgers`, {
         params: {
           _limit: limit,
           _page: page
