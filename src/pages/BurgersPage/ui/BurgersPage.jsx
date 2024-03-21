@@ -1,5 +1,6 @@
 import { CartItem } from "@/components/CartItem";
 import { ProductLayout } from "@/layouts/ProductLayout";
+import { ProductLayoutSkeleton } from "@/layouts/ProductLayout/ui/ProductLayout";
 import { getBurgers, getBurgersError, getBurgersLoading } from "@/redux/burgers/selectors/burgerSelectors";
 import { fetchNextBurgersPage } from "@/redux/burgers/services/fetchNextBurgersPage";
 import { useEffect } from "react";
@@ -39,11 +40,11 @@ const BurgersPage = () => {
             price={el.pieces.price}
         />
     })
-    console.log('ref', inView)
 
     return (
         <>
             <ProductLayout header={'Burgers'} item={item} />
+            {loading && <ProductLayoutSkeleton />}
             {!loading && <div ref={ref} />}
         </>
     );

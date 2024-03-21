@@ -1,7 +1,6 @@
 import { $api } from "@/api/api";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import {
-  getOthersError,
   getOthersLimit,
   getOthersPage,
 } from "../selectors/othersSelectors";

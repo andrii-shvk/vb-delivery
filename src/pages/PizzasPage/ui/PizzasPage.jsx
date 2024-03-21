@@ -6,6 +6,8 @@ import { calcMinPricePizza } from '@/utils/calcMinPrice';
 import { CartItem } from '@/components/CartItem';
 import { fetchNextPizzaPage } from '@/redux/pizzas/services/fetchNextPizzaPage';
 import { useInView } from 'react-intersection-observer';
+import { ProductLayoutSkeleton } from '@/layouts/ProductLayout/ui/ProductLayout';
+
 
 const PizzasPage = () => {
     const pizza = useSelector(getPizza);
@@ -31,19 +33,20 @@ const PizzasPage = () => {
     const item = pizza.map(el => {
         const minPrice = calcMinPricePizza(el.sizes, el.doughs);
         return <CartItem 
-            id={el.id}
-            key={el.id}
-            product={el.product}
-            img={el.photo}
-            title={el.name}
-            ingredients={el.ingredients}
-            price={minPrice}
+                    id={el.id}
+                    key={el.id}
+                    product={el.product}
+                    img={el.photo}
+                    title={el.name}
+                    ingredients={el.ingredients}
+                    price={minPrice}
         />
     })
 
     return (
         <>
-            <ProductLayout header={'Pizza'} item=   {item} />
+            <ProductLayout header={'Pizza'} item={item} />
+            {loading && <ProductLayoutSkeleton />}
             {!loading && <div ref={ref} />}
         </>
     );

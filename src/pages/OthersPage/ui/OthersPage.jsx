@@ -1,5 +1,6 @@
 import { CartItem } from "@/components/CartItem";
 import { ProductLayout } from "@/layouts/ProductLayout";
+import { ProductLayoutSkeleton } from "@/layouts/ProductLayout/ui/ProductLayout";
 import { getOthers, getOthersError, getOthersLoading } from "@/redux/others/selectors/othersSelectors";
 import { fetchNextOthersPage } from "@/redux/others/service/fetchNextOthersPage";
 import { useEffect } from "react";
@@ -10,7 +11,6 @@ const OthersPage = () => {
     const others = useSelector(getOthers);
     const loading = useSelector(getOthersLoading);
     const error = useSelector(getOthersError);
-    console.log('others', others)
 
     const { ref, inView } = useInView({
         threshold: 1,
@@ -38,11 +38,10 @@ const OthersPage = () => {
             price={el.price}
         />
     })
-    console.log('refINVIEW', inView);
-    console.log('item', item)
     return (
         <>
             <ProductLayout header={'Others'} item={item} />
+            {loading && <ProductLayoutSkeleton />}
             {!loading && <div ref={ref} />}
         </>
     );

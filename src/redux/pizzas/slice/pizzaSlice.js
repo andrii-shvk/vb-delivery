@@ -16,16 +16,17 @@ export const pizzaSlice = createSlice({
   reducers: {
     setPage: (state, action) => {
       state.page = action.payload;
-    }
+    },
   },
   extraReducers: (builder) => {
+    builder.addCase(fetchPizza.pending, (state) => {
+      state.error = null;
+      state.isLoading = true;
+    });
     builder.addCase(fetchPizza.fulfilled, (state, action) => {
       state.isLoading = false;
       state.pizza = [...state.pizza, ...action.payload];
       state.hasMore = action.payload.length >= state.limit;
-    });
-    builder.addCase(fetchPizza.pending, (state) => {
-      state.isLoading = true;
     });
     builder.addCase(fetchPizza.rejected, (state, action) => {
       state.isLoading = false;

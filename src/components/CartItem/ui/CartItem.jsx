@@ -4,9 +4,9 @@ import { productsName } from '@/const/const';
 
 const CartItem = (props) => {
     const {
-        id, 
+        // id, 
         img = '', 
-        title = '', 
+        title = '',         
         product = '', 
         ingredients = [], 
         description = '', 
