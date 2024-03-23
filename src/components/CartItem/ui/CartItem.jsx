@@ -1,19 +1,31 @@
 import { Button } from '@/ui/Button';
 import cls from './CartItem.module.scss';
 import { productsName } from '@/const/const';
+import { useDispatch } from 'react-redux';
+import { fetchProductItem } from '@/redux/productItem/services/fetchProductItem';
 
 const CartItem = (props) => {
     const {
-        // id, 
+        id, 
         img = '', 
-        title = '',         
+        title = '',
         product = '', 
         ingredients = [], 
         description = '', 
-        price = 0
+        price = 0,
+        handleClick
     } = props;
 
     const ingredientsText = ingredients.join(', ');
+
+    const dispatch = useDispatch();
+    const onClick = () => {
+        handleClick();
+        dispatch(fetchProductItem({
+            id: id,
+            product: product
+        }))
+    }
 
     return (
         <article className={cls.card}>
@@ -29,7 +41,7 @@ const CartItem = (props) => {
                 </div>
 
                 <div className={cls.footer}>
-                    <Button border className={cls.button}>
+                    <Button border className={cls.button} onClick={onClick}>
                         <span>From ${price}</span>
                     </Button>
                 </div>

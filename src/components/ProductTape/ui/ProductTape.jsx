@@ -1,8 +1,10 @@
 import cls from "./ProductTape.module.scss";
 import { CartItem, CartItemSkeleton } from "@/components/CartItem";
 import { productsName } from "@/const/const";
+import { LayoutContext } from "@/providers/LayoutContextProvider";
 import { Skeleton } from "@/ui/Skeleton";
 import { calcMinPricePizza } from "@/utils/calcMinPrice";
+import { useContext } from "react";
 
 export const getSkeleton = () => {
     return (
@@ -28,6 +30,9 @@ const ProductTape = (props) => {
     if (isLoading) {
         return getSkeleton();
     }
+
+    const {handleClick} = useContext(LayoutContext);
+
     const items = products.map(el => {
         const props = {
             id: el.id,
@@ -35,6 +40,8 @@ const ProductTape = (props) => {
             title: el.name,
             key: el.id,
             product: el.product,
+            handleClick: handleClick,
+            description: el.description
         }
 
         switch(el.product) {
@@ -44,8 +51,9 @@ const ProductTape = (props) => {
                     <CartItem {...props} ingredients={el.ingredients} price={minPricePizza}/>
             )
             case productsName.BURGERS:
+                const minPriceBurgers = el.pieces[0].price;
                 return (
-                    <CartItem {...props} ingredients={el.ingredients} price={el.price} />
+                    <CartItem {...props} ingredients={el.ingredients} price={minPriceBurgers} />
             )
             case productsName.OTHERS:
                 return (

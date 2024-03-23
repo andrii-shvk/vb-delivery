@@ -26,7 +26,7 @@ const BurgersPage = () => {
     }, [dispatch, error, inView])
 
     if (error) {
-        return <div>{error}</div>
+        return <div className='error'>{error}</div>
     }
 
     const item = burgers.map(el => {
@@ -37,7 +37,7 @@ const BurgersPage = () => {
             img={el.photo}
             title={el.name}
             ingredients={el.ingredients}
-            price={el.pieces.price}
+            price={el.pieces[0].price}
         />
     })
 

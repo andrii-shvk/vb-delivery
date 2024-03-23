@@ -12,7 +12,7 @@ const Header = () => {
     const returnToMain = () => {
         navigate('/')
     }
-    const {toggleTheme, theme} = useTheme();
+    const {toggleTheme} = useTheme();
     const handleToggleTheme = () => {
         toggleTheme();
     }

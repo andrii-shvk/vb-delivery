@@ -9,11 +9,9 @@ export const fetchOthers = createAsyncThunk(
   "other/fetchOthers",
   async (_, thunkAPI) => {
     const { rejectWithValue, getState } = thunkAPI;
-    console.log('getState', getState());
 
     const page = getOthersPage(getState());
     const limit = getOthersLimit(getState());
-    console.log('page', page);
     try {
       const response = await $api.get(`/other`, {
         params: {
@@ -23,7 +21,7 @@ export const fetchOthers = createAsyncThunk(
       });
       return response.data;
     } catch (error) {
-        return thunkAPI.rejectWithValue(
+        return rejectWithValue(
             "Sorry... Can not find the data from this resource!"
         );
     }

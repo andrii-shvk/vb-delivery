@@ -25,7 +25,7 @@ const OthersPage = () => {
     }, [dispatch, error, inView])
 
     if (error) {
-        return <div>{error}</div>
+        return <div className='error'>{error}</div>
     }
 
     const item = others.map(el => {
@@ -36,6 +36,7 @@ const OthersPage = () => {
             title={el.name}
             img={el.photo}
             price={el.price}
+            description={el.description}
         />
     })
     return (

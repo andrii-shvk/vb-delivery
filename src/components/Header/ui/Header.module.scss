@@ -45,8 +45,18 @@
     justify-content: center;
     gap: 8px;
 
+    background-color: var(--button-bg-color);
+
     color: #fff;
     svg {
         color: #fff;
     }
+
+    &:hover {
+        background-color: var(--inverted-button-bg-color);
+    }
+}
+
+.button span {
+    color: #fff;
 }
