@@ -9,6 +9,8 @@ import { useTheme } from '@/hooks/useTheme';
 import { Modal } from '@/ui/Modal/ui/Modal';
 import { useState } from 'react';
 import { BasketItem } from '@/components/BasketItem';
+import { useSelector } from 'react-redux';
+import { getBasketTotalPrice } from '@/redux/basket/selectors/basketSelectors';
 
 
 const Header = () => {
@@ -26,6 +28,8 @@ const Header = () => {
     const handleToggleTheme = () => {
         toggleTheme();
     }
+
+    const totalPrice = useSelector(getBasketTotalPrice);
 
     return (
         <>
@@ -45,7 +49,7 @@ const Header = () => {
 
                             <Button onClick={handleClick} className={cls.button}>
                                 <CartIcon />
-                                <span>0 $</span>
+                                <span>${totalPrice}</span>
                             </Button>
                         </div>
                     </div>
@@ -64,8 +68,9 @@ const Header = () => {
                     <BasketItem />
 
                     <div className={cls.footer}>
+                        
                         <div className={cls.totalPrice}>
-                            <span>Total: $0</span>
+                            <span>Total: ${totalPrice}</span>
                         </div>
 
                         <Button>

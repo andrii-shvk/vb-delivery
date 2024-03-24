@@ -23,7 +23,7 @@ export const basketSlice = createSlice({
         state.items.push(action.payload);
       }
 
-      state.totalPrice = calcTotalPrice(state.items);
+      state.totalPrice = calcTotalPrice(state.items).toFixed(2);
     },
     minusItem(state, action) {
       const item = state.items.find((res) => {
@@ -38,7 +38,7 @@ export const basketSlice = createSlice({
         });
       }
 
-      state.totalPrice = calcTotalPrice(state.items);
+      state.totalPrice = calcTotalPrice(state.items).toFixed(2);
     },
   },
 });

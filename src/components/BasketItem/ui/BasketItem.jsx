@@ -31,12 +31,24 @@ const BasketItem = () => {
                     </span>
                 )
             case productsName.BURGERS:
-                return null;
+                return (
+                    <span>
+                        Mmm... Tasty!
+                    </span>
+                );
             case productsName.OTHERS:
-                return null;
+                return (
+                    <span>
+                        Take away your thirst!
+                    </span>
+                );
             default:
                 null;
         }
+    }
+
+    const priceTotalItem = (el) => {
+        return (el.count * el.price).toFixed(2);
     }
 
     const item = basket.map(el => (
@@ -70,10 +82,8 @@ const BasketItem = () => {
                             +
                         </Button>
                     </div>
-                    {console.log(el.price)}
-                    {console.log(el.count)}
 
-                    <span>${el.price * el.count}</span>
+                    <span>${priceTotalItem(el)}</span>
                 </div>
             </div>
         </div>
