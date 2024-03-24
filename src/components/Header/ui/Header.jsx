@@ -7,14 +7,16 @@ import { Icon } from '@/ui/Icon';
 import { useNavigate } from 'react-router-dom';
 import { useTheme } from '@/hooks/useTheme';
 import { Modal } from '@/ui/Modal/ui/Modal';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { BasketItem } from '@/components/BasketItem';
 import { useSelector } from 'react-redux';
 import { getBasketTotalPrice } from '@/redux/basket/selectors/basketSelectors';
+import { LayoutContext } from '@/providers/LayoutContextProvider';
 
 
 const Header = () => {
     const navigate = useNavigate();
+    const {popup} = useContext(LayoutContext);
 
     const [isOpen, setIsOpen] = useState(false);
     const handleClick = () => {
@@ -53,6 +55,8 @@ const Header = () => {
                             </Button>
                         </div>
                     </div>
+
+                    {popup && <p className={cls.popup}>The product was added to the cart!</p>}
                 </div>
             </header>
 

@@ -9,12 +9,13 @@ import { LayoutContext } from "@/providers/LayoutContextProvider";
 const ModalItemLayout = (props) => {
     const {params, price, options} = props;
 
-    const {setIsOpen} = useContext(LayoutContext);
+    const {setIsOpen, openPopup} = useContext(LayoutContext);
 
     const dispatch = useDispatch();
     const onClick = () => {
         dispatch(basketActions.addItem({...params, price: price}));
         setIsOpen(false);
+        openPopup();
     }
 
     return (
