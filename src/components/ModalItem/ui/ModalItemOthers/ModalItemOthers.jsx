@@ -8,9 +8,9 @@ import { productActions } from "@/redux/productItem/slice/productItemSlice";
 import { useModalItemParams } from "../../helper/useModalItemParams";
 
 const ModalItemOthers = (props) => {
-    const {isOpen, product, price} = props;
+    const {isOpen, product} = props;
 
-    const newParams = useModalItemParams();
+    const params = useModalItemParams();
 
     const dispatch = useDispatch();
 
@@ -37,7 +37,7 @@ const ModalItemOthers = (props) => {
     )
 
     return (
-        <ModalItemLayout options={options} params={newParams} price={product.price} />
+        <ModalItemLayout options={options} params={params} price={product.price} />
     );
 }
  

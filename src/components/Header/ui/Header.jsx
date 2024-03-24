@@ -6,9 +6,19 @@ import { Button } from '@/ui/Button';
 import { Icon } from '@/ui/Icon';
 import { useNavigate } from 'react-router-dom';
 import { useTheme } from '@/hooks/useTheme';
+import { Modal } from '@/ui/Modal/ui/Modal';
+import { useState } from 'react';
+import { BasketItem } from '@/components/BasketItem';
+
 
 const Header = () => {
     const navigate = useNavigate();
+
+    const [isOpen, setIsOpen] = useState(false);
+    const handleClick = () => {
+        setIsOpen(prev => !prev)
+    }
+
     const returnToMain = () => {
         navigate('/')
     }
@@ -18,26 +28,53 @@ const Header = () => {
     }
 
     return (
-        <div className={cls.header}>
-            <div className={cls.container}>
-                <div className={cls.content}>
-                    <div className={cls.logo}>
-                        <Icon Svg={LogoPizza} clickable onClick={returnToMain}/>
-                        
-                        <p>DeliVirginia</p>
-                        <p>Location</p>
-                    </div>
+        <>
+            <header className={cls.header}>
+                <div className={cls.container}>
+                    <div className={cls.content}>
+                        <div className={cls.logo}>
+                            <Icon Svg={LogoPizza} clickable onClick={returnToMain}/>
+                            
+                            <p>DeliVirginia</p>
+                            <p>Location</p>
+                        </div>
 
-                    <div className={cls.buttons}>
-                            <Icon Svg={ToggleTheme} clickable onClick={handleToggleTheme} />
-                        <Button className={cls.button}>
-                            <CartIcon />
-                            <span>0 $</span>
+                        <div className={cls.buttons}>
+
+                                <Icon Svg={ToggleTheme} clickable onClick={handleToggleTheme} />
+
+                            <Button onClick={handleClick} className={cls.button}>
+                                <CartIcon />
+                                <span>0 $</span>
+                            </Button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <Modal 
+                variant={'rightModal'}
+                width={420} 
+                scroll={'auto'}
+                height={'100%'} 
+                isOpen={isOpen}
+                setIsOpen={setIsOpen}
+            >
+                <div className={cls.body}>
+                    <BasketItem />
+
+                    <div className={cls.footer}>
+                        <div className={cls.totalPrice}>
+                            <span>Total: $0</span>
+                        </div>
+
+                        <Button>
+                            Continue to checkout
                         </Button>
                     </div>
                 </div>
-            </div>
-        </div>
+            </Modal>
+        </>
     );
 }
  

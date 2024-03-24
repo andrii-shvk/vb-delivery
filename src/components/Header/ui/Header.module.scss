@@ -60,3 +60,34 @@
 .button span {
     color: #fff;
 }
+
+.body {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--border-color);
+    padding: 12px 20px;
+
+    button {
+        min-height: 40px;
+        min-width: 180px;
+        padding: 5px;
+        color: #fff;
+        border-radius: 9px;
+    }
+}
+
+.totalPrice {
+    font-family: "Inter";
+    font-weight: 600;
+    font: var(--font-m);
+    color: var(--icon-color);
+}

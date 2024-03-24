@@ -12,7 +12,7 @@ import { useModalItemParams } from "../../helper/useModalItemParams";
 const ModalItemBurgers = (props) => {
     const {isOpen, product, price} = props;
 
-    const newParams = useModalItemParams();
+    const params = useModalItemParams();
 
     const dispatch = useDispatch();
     const quantityBurgers = useSelector(getProductItemBurgers);
@@ -54,7 +54,7 @@ const ModalItemBurgers = (props) => {
     )
 
     return (
-        <ModalItemLayout params={newParams} options={options} price={price}/>
+        <ModalItemLayout params={params} options={options} price={price}/>
     );
 }
 
