@@ -1,11 +1,11 @@
 import { useSelector } from 'react-redux';
-import cls from './ModalItem.module.scss';
 import { getProductItem, getProductItemLoading, getProductItemPrice } from '@/redux/productItem/selectors/productItemSelectors';
 import { productsName } from '@/const/const';
 import { ModalItemPizza } from '../ModalItemPizza/ModalItemPizza';
 import { ModalItemBurgers } from '../ModalItemBurgers/ModalItemBurgers';
 import { ModalItemOthers } from '../ModalItemOthers/ModalItemOthers';
 import { Modal } from '@/ui/Modal/ui/Modal';
+import { ModalItemSkeleton } from '../ModalItemSkeleton/ModalItemSkeleton';
 
 const ModalItem = (props) => {
     const {isOpen, setIsOpen} = props;
@@ -33,11 +33,25 @@ const ModalItem = (props) => {
         }
     }
 
+    if (loading) {
+        return (
+            <Modal
+                setIsOpen={setIsOpen}
+                isOpen={isOpen}
+                width={1070}
+                height={680}
+                border={25}
+            >
+                <ModalItemSkeleton />
+            </Modal>
+        )
+    }
+
     return (
         <Modal 
             setIsOpen={setIsOpen}
             isOpen={isOpen}
-            width={700}
+            width={1070}
             height={680}
             border={25}
         >

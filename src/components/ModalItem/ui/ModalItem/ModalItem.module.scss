@@ -7,7 +7,46 @@
       flex-basis: 50%;
     }
   }
+
+  .ingredientsDesc {
+    color: var(--primary-color);
+    line-height: 1.5;
+  }
+
+  .drinksDesc {
+    color: var(--primary-color);
+    line-height: 1.5;
+    font: var(--font-l);
+
+    & p {
+      margin-bottom: 10px;
+    }
+  }
+
+  // .itemBurger {
+  //   display: flex;
+  //   border-radius: 6px;
   
+  //   button {
+  //     flex-basis: 50%;
+  //   }
+  // }
+
+  // .bodyBurger {
+  //   display: block;
+  //   width: 200px;
+  //   max-width: 100%;
+  //   border-radius: 12px;
+  //   background-color: var(--icon-color);
+  //   padding: 15px 10px;
+  //   font: var(--font-m);
+
+  //   & span {
+  //   color: #fff;
+  //   }
+
+  // }
+
   .options {
     display: flex;
     flex-direction: column;

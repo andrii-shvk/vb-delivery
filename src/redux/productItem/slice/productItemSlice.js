@@ -22,7 +22,7 @@ export const productSlice = createSlice({
       state.type = action.payload;
     },
     setPrice(state, action) {
-      state.price = action.payload;
+      state.price = action.payload.toFixed(2);
     },
     setQuantity(state, action) {
       state.quantity = action.payload;

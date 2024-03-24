@@ -642,7 +642,7 @@
         "product": "burgers",
         "rating": 1,
         "name": "Texas Double Whopper",
-        "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663829084_46-mykaleidoscope-ru-p-firmennie-rolli-yeda-vkontakte-52.jpg",
+        "photo": ".././src/assets/img/burgers/texasdbl.jpg",
         "pieces":[ 
           {
             "name": "1 pcs.",
@@ -650,14 +650,7 @@
           }
         ],
         "ingredients": [
-                "Two ¼ lb.* flame-grilled beef patties topped with melty American crispy bacon", 
-                "juicy tomatoes",
-                "crisp lettuce", 
-                "sliced white onions",
-                "runchy pickles",
-                "jalapenos",
-                "creamy mayonnaise",
-                "yellow mustard on a toasted sesame seed bun"
+                "Two ¼ lb.* flame-grilled beef patties topped with melty American crispy bacon, juicy tomatoes, crisp lettuce, sliced white onions, runchy pickles, jalapenos, creamy mayonnaise, yellow mustard on a toasted sesame seed bun."
             ]
       },
       {
@@ -665,7 +658,7 @@
         "product": "burgers",
         "rating": 3,
         "name": "Whopper",
-        "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663829084_46-mykaleidoscope-ru-p-firmennie-rolli-yeda-vkontakte-52.jpg",
+        "photo": ".././src/assets/img/burgers/whopper.jpg",
         "pieces":[ 
           {
             "name": "1 pcs.",
@@ -673,12 +666,7 @@
           }
         ],
         "ingredients": [
-            "The Whopper Sandwich is a ¼ lb** of flame-grilled beef with juicy tomatoes", 
-            "crisp lettuce",
-            "creamy mayonnaise", 
-            "ketchup",
-            "crunchy pickles",
-            "sliced white onions on a toasted sesame seed bun"
+            "The Whopper Sandwich is a ¼ lb** of flame-grilled beef with juicy tomatoes, crisp lettuce, creamy mayonnaise, ketchup, crunchy pickles, sliced white onions on a toasted sesame seed bun."
         ]
       },
       {
@@ -686,7 +674,7 @@
         "product": "burgers",
         "name": "Impossible™ Whopper",
         "rating": 4,
-        "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663829084_46-mykaleidoscope-ru-p-firmennie-rolli-yeda-vkontakte-52.jpg",
+        "photo": ".././src/assets/img/burgers/impossible wooper.jpg",
         "pieces":[ 
           {
             "name": "1 pcs.",
@@ -694,12 +682,7 @@
           }
         ],
         "ingredients": [
-            "A flame-grilled", 
-            "plant-based patty with juicy tomatoes",
-            "crisp lettuce", 
-            "creamy mayonnaise",
-            "ketchup",
-            "crunchy pickles"
+            "A flame-grilled, plant-based patty with juicy tomatoes, crisp lettuce, creamy mayonnaise, ketchup, crunchy pickles."
         ]
       },
       {
@@ -707,7 +690,7 @@
         "product": "burgers",
         "name": "Bacon King",
         "rating": 2,
-        "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663829084_46-mykaleidoscope-ru-p-firmennie-rolli-yeda-vkontakte-52.jpg",
+        "photo": ".././src/assets/img/burgers/bacon.jpg",
         "pieces":[ 
           {
             "name": "1 pcs.",
@@ -715,9 +698,7 @@
           }
         ],
         "ingredients": [
-            "Two 1/4 lb* flame-grilled beef patties with crispy bacon", 
-            "melted American cheese",
-            "ketchup"
+            "Two 1/4 lb* flame-grilled beef patties with crispy bacon, melted American cheese, ketchup."
         ]
       },
       {
@@ -725,7 +706,7 @@
         "product": "burgers",
         "name": "Hamburger",
         "rating": 5,
-        "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663829084_46-mykaleidoscope-ru-p-firmennie-rolli-yeda-vkontakte-52.jpg",
+        "photo": ".././src/assets/img/burgers/hamburger.jpg",
         "pieces":[ 
           {
             "name": "1 pcs.",
@@ -733,9 +714,7 @@
           }
         ],
         "ingredients": [
-            "A flame-grilled beef patty with crunchy pickles", 
-            "yellow mustard",
-            "and ketchup on a toasted sesame seed bun"
+            "A flame-grilled beef patty with crunchy pickles, yellow mustard, and ketchup on a toasted sesame seed bun."
         ]
       },
       {
@@ -743,7 +722,7 @@
         "product": "burgers",
         "name": "Cheeseburger",
         "rating": 4,
-        "photo": "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663829084_46-mykaleidoscope-ru-p-firmennie-rolli-yeda-vkontakte-52.jpg",
+        "photo": ".././src/assets/img/burgers/cheesburger.jpg",
         "pieces":[ 
           {
             "name": "1 pcs.",
@@ -751,10 +730,7 @@
           }
         ],
         "ingredients": [
-            "A flame-grilled beef patty topped with melted American cheese",
-            "crunchy pickles",
-            "yellow mustard",
-            "and ketchup on a toasted sesame seed bun"
+            "A flame-grilled beef patty topped with melted American cheese, crunchy pickles, yellow mustard, and ketchup on a toasted sesame seed bun."
         ]
       }
     ],

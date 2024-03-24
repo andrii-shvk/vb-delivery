@@ -6,7 +6,7 @@
   }
   
   .title {
-    font: var(--font-m);
+    font: var(--font-l);
     font-weight: 600;
     font-family: "Inter";
     color: var(--primary-color);
@@ -17,6 +17,7 @@
     height: 450px;
     object-fit: cover;
     align-self: center;
+    border-radius: 12px;
   }
   
   .price {
@@ -42,6 +43,9 @@
     min-height: 50px;
     min-width: 135px;
     color: #fff;
+    background-color: var(--button-bg-color);
+    border-radius: 6px;
+
   }
   
   ////

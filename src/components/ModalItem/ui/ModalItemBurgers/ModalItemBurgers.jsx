@@ -6,10 +6,13 @@ import { useDispatch, useSelector } from "react-redux";
 import cls from './../ModalItem/ModalItem.module.scss';
 import { Button } from "@/ui/Button";
 import { ModalItemLayout } from "@/layouts/ModalItemLayout";
+import { useModalItemParams } from "../../helper/useModalItemParams";
 
 
 const ModalItemBurgers = (props) => {
     const {isOpen, product, price} = props;
+
+    const newParams = useModalItemParams();
 
     const dispatch = useDispatch();
     const quantityBurgers = useSelector(getProductItemBurgers);
@@ -21,11 +24,11 @@ const ModalItemBurgers = (props) => {
                 dispatch(productActions.setQuantity(product.pieces[0]))
             }
         }
-    }, [dispatch, isOpen, product])
+    }, [dispatch, isOpen, product]);
 
     useEffect(() => {
         if (productsName.BURGERS === product.product && isOpen && quantityBurgers) {
-            dispatch(productActions.setPrice(quantityBurgers.price))
+            dispatch(productActions.setPrice(quantityBurgers.price));
         }
     }, [dispatch, isOpen, product, quantityBurgers]);
 
@@ -36,38 +39,23 @@ const ModalItemBurgers = (props) => {
     const options = (
         <div className={cls.options}>
             <div className={cls.block}>
-                <p>Quantity of pieces</p>
+                <p>mmm... Take a tasty!</p>
 
-                <div className={cls.item}>
-                    {product.pieces.map((quantity, i) => {
-                        return <Button
-                            border
-                            variant={'clear'}
-                            key={i}
-                            active={quantityBurgers === quantity}
-                            onClick={() => {handleClickQuantity(quantity)}}
-                        >
-                            {quantity.name}
-                        </Button>
-                    })}
+                <div className={cls.itemBurger}>
+                    {product.ingredients.map(el => (
+                        <span key={el} className={cls.ingredientsDesc}>
+                            {el}
+                        </span>
+                    ))}
+
                 </div>
-
             </div>
-
         </div>
     )
 
-    const newParams = {
-        id: product.id,
-        product: product.product,
-        img: product.photo,
-        title: product.name,
-        price: price
-    }
-
     return (
-        <ModalItemLayout params={newParams} options={options} />
+        <ModalItemLayout params={newParams} options={options} price={price}/>
     );
 }
- 
+
 export {ModalItemBurgers};

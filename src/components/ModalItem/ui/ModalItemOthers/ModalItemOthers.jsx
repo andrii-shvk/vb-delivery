@@ -3,12 +3,14 @@ import { getProductItem } from "@/redux/productItem/selectors/productItemSelecto
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import cls from './../ModalItem/ModalItem.module.scss';
-import { Button } from "@/ui/Button";
 import { ModalItemLayout } from "@/layouts/ModalItemLayout";
 import { productActions } from "@/redux/productItem/slice/productItemSlice";
+import { useModalItemParams } from "../../helper/useModalItemParams";
 
 const ModalItemOthers = (props) => {
     const {isOpen, product, price} = props;
+
+    const newParams = useModalItemParams();
 
     const dispatch = useDispatch();
 
@@ -22,32 +24,20 @@ const ModalItemOthers = (props) => {
         }
     }, [dispatch, isOpen, product]);
 
-    // const options = (
-    //     <div className={cls.options}>
-    //         <div className={cls.block}>
-    //             <p>Quantity of piceces</p>
+    const options = (
+        <div className={cls.options}>
+            <div className={cls.block}>
+                <span className={cls.drinksDesc}>
+                    <p>Thirsty?...</p>
+                    Take more of our drinks!
+                </span>
 
-    //             <div className={cls.item}>
-    //                 {product.pieces.map((quantity, i) => {
-    //                     return <Button>
-    //                         {quantity.name}
-    //                     </Button>
-    //                 })}
-    //             </div>
-    //         </div>
-    //     </div>
-    // )
-
-    const params = {
-        id: product.id,
-        product: product.product,
-        img: product.photo,
-        title: product.name,
-        // count: 1
-    }
+            </div>
+        </div>
+    )
 
     return (
-        <ModalItemLayout params={params} price={price} />
+        <ModalItemLayout options={options} params={newParams} price={product.price} />
     );
 }
  

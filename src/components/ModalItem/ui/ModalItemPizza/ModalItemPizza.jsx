@@ -6,10 +6,12 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import cls from './../ModalItem/ModalItem.module.scss';
 import { Button } from "@/ui/Button";
+import { useModalItemParams } from "../../helper/useModalItemParams";
 
 
 const ModalItemPizza = (props) => {
     const {isOpen, product, price} = props;
+    const newParams = useModalItemParams();
     
     const dispatch = useDispatch();
 
@@ -83,16 +85,8 @@ const ModalItemPizza = (props) => {
 
     )
 
-    const newParams = {
-        id: product.id,
-        product: product.product,
-        img: product.photo,
-        title: product.name,
-        price: price
-    }
-
     return (
-        <ModalItemLayout params={newParams} options={options} />
+        <ModalItemLayout params={newParams} options={options} price={price}/>
     );
 }
  
