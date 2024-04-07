@@ -7,6 +7,8 @@ import { Navbar } from '@/components/Navbar';
 import { ModalItem } from '@/components/ModalItem';
 import { useContext } from 'react';
 import { LayoutContext } from '@/providers/LayoutContextProvider';
+import { ContactInfo } from '@/components/ContactInfo';
+import { ScrollToAnchor } from '@/ui/ScrollToAnchor';
 
 const MainLayout = () => {
     const {theme} = useTheme();
@@ -15,6 +17,7 @@ const MainLayout = () => {
 
     return (
         <div id='app' className={`app ${theme}`}>
+            <ScrollToAnchor />
             <Header />
 
             <main className={cls.main}>
@@ -23,10 +26,10 @@ const MainLayout = () => {
                         <Navbar />
 
                         <Outlet />
+                        <ContactInfo />
                     </div>
                 </div>
             </main>
-
             <Footer />   
             <ModalItem isOpen={isOpen} setIsOpen={setIsOpen} />         
         </div>

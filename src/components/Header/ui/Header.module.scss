@@ -16,6 +16,11 @@
     justify-content: space-between;
 }
 
+// .content a {
+//     font: var(--font-s);
+//     text-decoration: none;
+// }
+
 .logo {
     display: flex;
     align-items: center;
@@ -25,6 +30,15 @@
         color: var(--primary-color);
         font: var(--font-m);
         font-weight: 700;
+    }
+}
+
+.location {
+    font: var(--font-s);
+    color: var(--primary-color);
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        color: var(--icon-color);
     }
 }
 

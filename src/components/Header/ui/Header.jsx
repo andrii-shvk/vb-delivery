@@ -4,7 +4,7 @@ import CartIcon from '@/assets/img/cart.svg';
 import LogoPizza from '@/assets/img/logoPizza.svg'
 import { Button } from '@/ui/Button';
 import { Icon } from '@/ui/Icon';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useTheme } from '@/hooks/useTheme';
 import { Modal } from '@/ui/Modal/ui/Modal';
 import { useContext, useState } from 'react';
@@ -40,10 +40,9 @@ const Header = () => {
                     <div className={cls.content}>
                         <div className={cls.logo}>
                             <Icon Svg={LogoPizza} clickable onClick={returnToMain}/>
-                            
                             <p>DeliVirginia</p>
-                            <p>Location</p>
                         </div>
+                            <Link to='#contactInfo' className={cls.location}><strong>Location:</strong> 1135 North Yarbrough Drive</Link>
 
                         <div className={cls.buttons}>
 

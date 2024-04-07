@@ -1,0 +1,50 @@
+.contactForm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.info h3 {
+    color: var(--primary-color);
+    font: var(--font-m);
+    font-weight: 700;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 600px;
+}
+.dineHours {
+    display: flex;
+    flex-direction: column;
+    color: var(--primary-color);
+    margin-left: 20px;
+}
+.dineHours p {
+    line-height: 2;
+}
+.workTime {
+    display: flex;
+    justify-content: space-between;
+}
+.location {
+    display: flex;
+    justify-content: space-between;
+    font: var(--font-s);
+    color: var(--primary-color);
+    align-items: center;
+}
+.phone {
+    font: var(--font-m);
+    color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+}
+.phone a {
+    color: var(--primary-color);
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        color: var(--icon-color);
+    }
+}
