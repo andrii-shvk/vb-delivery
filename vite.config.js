@@ -11,8 +11,8 @@ export default defineConfig({
     open: true
   },
   define: {
-    __API__: JSON.stringify('http://localhost:8000')
-    // __API__: JSON.stringify('https://vbdeliveryserver-eemjdi2u.b4a.run')
+    // __API__: JSON.stringify('http://localhost:8000')
+    __API__: JSON.stringify('https://vbdeliveryserver-eemjdi2u.b4a.run')
   },
   resolve: {
     alias: {
