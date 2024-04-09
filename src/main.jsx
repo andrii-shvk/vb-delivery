@@ -12,7 +12,6 @@ import { persistor, store } from './redux/store';
 import { LayoutContextProvider } from './providers/LayoutContextProvider';
 import { PersistGate } from 'redux-persist/integration/react';
 
-
 const router = createBrowserRouter([
   {
     path: '/',

@@ -642,7 +642,7 @@
         "product": "burgers",
         "rating": 1,
         "name": "Texas Double Whopper",
-        "photo": ".././src/assets/img/burgers/texasdbl.jpg",
+        "photo": "https://i.ibb.co/9vz2JHK/cheesburger.jpg",
         "pieces":[ 
           {
             "name": "1 pcs.",
@@ -658,7 +658,7 @@
         "product": "burgers",
         "rating": 3,
         "name": "Whopper",
-        "photo": ".././src/assets/img/burgers/whopper.jpg",
+        "photo": "https://i.ibb.co/9vz2JHK/cheesburger.jpg",
         "pieces":[ 
           {
             "name": "1 pcs.",
@@ -674,7 +674,7 @@
         "product": "burgers",
         "name": "Impossible™ Whopper",
         "rating": 4,
-        "photo": ".././src/assets/img/burgers/impossible wooper.jpg",
+        "photo": "https://i.ibb.co/9vz2JHK/cheesburger.jpg",
         "pieces":[ 
           {
             "name": "1 pcs.",
@@ -690,7 +690,7 @@
         "product": "burgers",
         "name": "Bacon King",
         "rating": 2,
-        "photo": ".././src/assets/img/burgers/bacon.jpg",
+        "photo": "https://i.ibb.co/9vz2JHK/cheesburger.jpg",
         "pieces":[ 
           {
             "name": "1 pcs.",
@@ -706,7 +706,7 @@
         "product": "burgers",
         "name": "Hamburger",
         "rating": 5,
-        "photo": ".././src/assets/img/burgers/hamburger.jpg",
+        "photo": "https://i.ibb.co/9vz2JHK/cheesburger.jpg",
         "pieces":[ 
           {
             "name": "1 pcs.",
@@ -722,7 +722,7 @@
         "product": "burgers",
         "name": "Cheeseburger",
         "rating": 4,
-        "photo": ".././src/assets/img/burgers/cheesburger.jpg",
+        "photo": "https://i.ibb.co/9vz2JHK/cheesburger.jpg",
         "pieces":[ 
           {
             "name": "1 pcs.",

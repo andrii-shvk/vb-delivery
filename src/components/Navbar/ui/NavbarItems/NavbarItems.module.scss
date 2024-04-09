@@ -12,6 +12,14 @@
     width: 100%;
     max-width: 135px;
     background: var(--light-bg);
+
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        background: var(--icon-color);
+    }
+    &:hover svg {
+        color: #fff;
+    }
 }
 
 .text {

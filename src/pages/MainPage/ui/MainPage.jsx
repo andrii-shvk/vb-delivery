@@ -1,5 +1,6 @@
 import './MainPage.module.scss';
 import { useGetBurgers, useGetOthers, useGetPizzas } from '@/api/rtkApi';
+import { ContactInfo } from '@/components/ContactInfo';
 import { ProductTape } from '@/components/ProductTape';
 
 
@@ -28,6 +29,7 @@ const MainPage = () => {
                 isLoading={otherLoading}
                 error={otherError}
             />
+            <ContactInfo />
         </>
     )
 }

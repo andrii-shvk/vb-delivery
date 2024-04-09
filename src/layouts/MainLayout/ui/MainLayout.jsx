@@ -7,12 +7,10 @@ import { Navbar } from '@/components/Navbar';
 import { ModalItem } from '@/components/ModalItem';
 import { useContext } from 'react';
 import { LayoutContext } from '@/providers/LayoutContextProvider';
-import { ContactInfo } from '@/components/ContactInfo';
 import { ScrollToAnchor } from '@/ui/ScrollToAnchor';
 
 const MainLayout = () => {
     const {theme} = useTheme();
-
     const {isOpen, setIsOpen} = useContext(LayoutContext);
 
     return (
@@ -26,12 +24,11 @@ const MainLayout = () => {
                         <Navbar />
 
                         <Outlet />
-                        <ContactInfo />
                     </div>
                 </div>
             </main>
-            <Footer />   
-            <ModalItem isOpen={isOpen} setIsOpen={setIsOpen} />         
+            <Footer />
+            <ModalItem isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
     );
 }

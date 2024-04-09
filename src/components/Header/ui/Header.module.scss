@@ -16,20 +16,27 @@
     justify-content: space-between;
 }
 
-// .content a {
-//     font: var(--font-s);
-//     text-decoration: none;
-// }
-
 .logo {
     display: flex;
     align-items: center;
     gap: 10px;
+    animation: slideLogo 0.7s;
 
     p {
         color: var(--primary-color);
         font: var(--font-m);
         font-weight: 700;
+    }
+}
+
+@keyframes slideLogo {
+    from {
+        transform: translateX(-150%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
     }
 }
 
@@ -40,6 +47,32 @@
     &:hover {
         color: var(--icon-color);
     }
+    animation: slideIn 0.5s;
+}
+
+.none {
+    animation: slideOut 0.5s ease forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-150%);
+        opacity: 0;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-150%);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
 
 .buttons {
@@ -47,6 +80,18 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
+    animation: slideBtns 0.7s;
+}
+
+@keyframes slideBtns {
+    from {
+        transform: translateX(150%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .button {
