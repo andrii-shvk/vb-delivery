@@ -5,12 +5,13 @@ import { LayoutContext } from "@/providers/LayoutContextProvider";
 import { Skeleton } from "@/ui/Skeleton";
 import { calcMinPricePizza } from "@/utils/calcMinPrice";
 import { useContext } from "react";
+import { useMediaQuery } from 'react-responsive';
 
-export const getSkeleton = () => {
+export const getSkeleton = (isTablet) => {
     return (
         <section className={cls.products}>
             <h2 className={cls.title}>
-                <Skeleton width={500} height={50} />
+                <Skeleton width={isTablet ? 290 : 500} height={isTablet ? 45 : 50} />
             </h2>
 
             <div className={cls.card}>
@@ -26,13 +27,13 @@ export const getSkeleton = () => {
 
 const ProductTape = (props) => {
     const {title, products = [], isLoading = false, error = undefined} = props;
-
-    if (isLoading) {
-        return getSkeleton();
-    }
-
+    const isTablet = useMediaQuery({ query: '(max-width: 768px)' });
     const {handleClick} = useContext(LayoutContext);
 
+    if (isLoading) {
+        return getSkeleton(isTablet);
+    }
+    
     const items = products.map(el => {
         const props = {
             id: el.id,

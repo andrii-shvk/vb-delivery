@@ -6,6 +6,9 @@
     overflow: hidden;
     padding: 16px;
     align-items: center;
+    @media (max-width: 768px) {
+        gap: 10px;
+    }
 }
 
 .basketContent {
@@ -17,6 +20,18 @@
         font: var(--font-l);
         font-weight: 600;
         color: var(--primary-color);
+        @media (max-width: 970px) {
+            font-size: 30px;
+        }
+        @media (max-width: 768px) {
+            font-size: 24px;
+        }
+    }
+    @media (max-width: 970px) {
+        gap: 13px;
+    }
+    @media (max-width: 768px) {
+        padding: 5px;
     }
 }
 
@@ -24,8 +39,13 @@
     max-width: 120px;
     max-height: 120px;
     height: 100%;
+    width: 100%;
     object-fit: cover;
     border-radius: 12px;
+    @media (max-width: 768px) {
+        max-width: 100px;
+        max-height: 100px;
+    }
 }
 
 .content {
@@ -46,6 +66,11 @@
     p {
         font-weight: 600;
     }
+    @media (max-width: 768px) {
+        span {
+            font-size: 14px;
+        }
+    }
 }
 
 .footer {
@@ -64,6 +89,11 @@
         font-weight: 600;
         font-size: 20px;
     }
+    @media (max-width: 768px) {
+        span {
+            font-size: 14px;
+        }
+    }
 }
 
 .count {
@@ -80,6 +110,9 @@
         justify-content: center;
         font-weight: 600;
     }
+    @media (max-width: 768px) {
+        width: 85px;
+    }
 }
 
 .empty {
@@ -87,5 +120,12 @@
         color: var(--primary-color);
         text-align: center;
         font: var(--font-m);
+    }
+    /* Mobile */
+    @media (max-width: 768px) {
+        text-align: center;
+        img {
+            width: 280px;
+        }
     }
 }

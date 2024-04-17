@@ -3,14 +3,50 @@
     flex-direction: column;
     gap: 30px;
     margin-bottom: 100px;
+    @media (max-width: 1360px) {
+        margin-bottom: 70px;
+    }
+    @media (max-width: 1180px) {
+        margin-bottom: 60px;
+        gap: 20px;
+    }
+    @media (max-width: 969px) {
+        margin-bottom: 50px;
+        gap: 10px;
+    }
+    @media (max-width: 767px) {
+        margin-bottom: 25px;
+    }
 }
 .title {
     font: var(--font-l);
     font-weight: 600;
     color: var(--primary-color);
+    @media (max-width: 1180px) {
+        margin-left: 62px;
+    }
+    @media (max-width: 969px) {
+        font-size: 30px;
+        margin-left: 38px;
+    }
+    @media (max-width: 767px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 .card {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
+    @media (max-width: 1180px) {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media (max-width: 969px) {
+        gap: 20px;
+    }
+    @media (max-width: 767px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

@@ -1,6 +1,4 @@
-import { LayoutContext } from "@/providers/LayoutContextProvider";
 import classNames from "classnames";
-import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 
 const AppLink = (props) => {

@@ -7,6 +7,20 @@
 .container {
     max-width: var(--container-main);
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    @media (max-width: 1360px) {
+        width: 1170px;
+    }
+    @media (max-width: 1180px) {
+        width: 970px;
+    }
+    @media (max-width: 969px) {
+        width: 768px;
+    }
+    @media (max-width: 767px) {
+        width: 320px;
+    }
 }
 
 .content {
@@ -14,6 +28,27 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+.mobileContent {
+    display: none;
+    @media (max-width: 767px) {
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 10px;
+    }
+}
+
+.menuHamburger {
+    color: var(--icon-color);
+    display: flex;
+    z-index: 12;
+    margin-left: 80px;
 }
 
 .logo {
@@ -26,6 +61,12 @@
         color: var(--primary-color);
         font: var(--font-m);
         font-weight: 700;
+    }
+    @media (max-width: 969px) {
+        svg {
+            width: 27px;
+            height: 29px;
+        }
     }
 }
 
@@ -50,7 +91,7 @@
     animation: slideIn 0.5s;
 }
 
-.none {
+.offLocation {
     animation: slideOut 0.5s ease forwards;
     animation-fill-mode: forwards;
 }
@@ -81,6 +122,12 @@
     justify-content: center;
     gap: 30px;
     animation: slideBtns 0.7s;
+    @media (max-width: 969px) {
+        gap: 20px;
+    }
+    @media (max-width: 768px) {
+        animation: slideIn 0.7s;
+    }
 }
 
 @keyframes slideBtns {
@@ -114,6 +161,18 @@
     &:hover {
         background-color: var(--inverted-button-bg-color);
     }
+    @media (max-width: 969px) {
+        min-height: 35px;
+        min-width: 90px;
+        gap: 6px;
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+        span {
+            font-size: 14px;
+        }
+    }
 }
 
 .button span {
@@ -142,6 +201,13 @@
         color: #fff;
         border-radius: 9px;
     }
+    @media (max-width: 768px) {
+        button {
+            min-width: 110px;
+            font-size: 14px;
+        }
+        font: var(--font-s);
+    }
 }
 
 .totalPrice {
@@ -149,6 +215,9 @@
     font-weight: 600;
     font: var(--font-m);
     color: var(--icon-color);
+    @media (max-width: 768px) {
+        font: var(--font-s);
+      }
 }
 
 .popup {
@@ -160,4 +229,52 @@
     color: var(--primary-color);
     border-radius: 50px;
     box-shadow: 0px 2px 4px rgba(25, 25, 25, 0.1);
+    @media (max-width: 768px) {
+        font-size: 12px;
+        padding: 7px 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .location {
+        display: none;
+    }
+}
+
+.menuContent {
+    width: 320px;
+    max-width: 100%;
+    height: 100%;
+    padding: 30px 0 40px 25px;
+    background-color: var(--light-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menuLinks {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    gap: 25px;
+    h1 {
+        font-weight: 600;
+        color: var(--primary-color);
+    }
+    a {
+        color: var(--primary-color);
+    }
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    a {
+        color: var(--primary-color);
+        transition: all 0.3s ease-in-out;
+    }
+    a:hover {
+        color: var(--icon-color);
+    }
 }

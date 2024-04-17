@@ -2,6 +2,18 @@
     background: var(--light-bg);
     border-radius: 10px;
     border: 1px solid var(--border-color);
+    @media (max-width: 1180px) {
+        height: 450px;
+        width: 370px;
+    }
+    @media (max-width: 969px) {
+        height: 400px;
+        width: 320px;
+    }
+    @media (max-width: 767px) {
+        height: 345px;
+        width: 290px;
+    }
 }
 .img {
     border-top-right-radius: 10px;
@@ -11,9 +23,23 @@
     height: 300px;
     width: 100%;
     object-fit: cover;
+    @media (max-width: 1360px) {
+        height: 270px;
+    }
+    @media (max-width: 969px) {
+        height: 230px;
+    }
+    @media (max-width: 767px) {
+        height: 195px;
+    }
 }
 .body {
     padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 768px) {
+        padding-top: 10px;        
+    }
 }
 .info {
     color: var(--primary-color);
@@ -27,10 +53,24 @@
         text-overflow: ellipsis;
         overflow-y: auto;
     }
+    @media (max-width: 767px) {
+        gap: 6px;
+        span {
+            width: 220px;
+            font-size: 14px;
+            text-align: center;
+            margin-left: 10px;
+        }
+    }
 }
 .title {
     font: var(--font-m);
     font-weight: 600;
+    @media (max-width: 767px) {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 16px;
+    }
 }
 .footer {
     display: flex;
@@ -42,10 +82,21 @@
     span {
         color: var(--primary-color);
     }
+    @media (max-width: 767px) {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 12px;
+    }
 }
 .button {
     min-height: 50px;
     min-width: 135px;
+    @media (max-width: 969px) {
+        min-height: 40px;
+    }
+    @media (max-width: 767px) {
+        min-height: 35px;
+    }
 }
 .skeletonPrice {
     margin-right: 20px;

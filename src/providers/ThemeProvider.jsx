@@ -1,5 +1,5 @@
 import { LOCALSTORAGE_THEME_KEY, Theme } from "@/const/const";
-import { createContext, useEffect, useMemo, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
 export const ThemeContext = createContext();
 

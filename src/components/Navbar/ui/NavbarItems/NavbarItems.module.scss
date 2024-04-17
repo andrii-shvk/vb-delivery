@@ -20,11 +20,39 @@
     &:hover svg {
         color: #fff;
     }
+
+    @media (max-width: 1180px) {
+        min-height: 90px;
+        max-width: 120px;
+        padding: 15px 30px;
+    }
+    @media (max-width: 969px) {
+        min-height: 80px;
+        max-width: 100px;
+        padding: 10px;
+    }
+    @media (max-width: 767px) {
+        min-height: 70px;
+        max-width: 90px;
+        padding: 7px;
+        gap: 3px;
+        svg {
+            width: 27px;
+            height: 27px;
+        }
+    }
 }
 
 .text {
     font: var(--font-m);
     color: var(--primary-color);
+
+    @media (max-width: 1180px) {
+        font: var(--font-s);
+    }
+    @media (max-width: 767px) {
+        font-size: 14px;
+    }
 }
 
 .active {

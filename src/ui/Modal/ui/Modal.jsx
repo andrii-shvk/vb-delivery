@@ -6,7 +6,8 @@ import { useLayoutEffect, useState } from "react";
 ReactModal.setAppElement('#root');
 const variantClasses = {
     rightModal: 'rightModal',
-    normal: 'modal'
+    normal: 'modal',
+    headerMenu: 'headerMenu'
 }
 
 const Modal = (props) => {
@@ -28,8 +29,12 @@ const Modal = (props) => {
     useLayoutEffect(() => {
         if(!isOpen) {
             setIsClosing(true);
+            document.querySelector('#back_to_top').classList.remove('none');
+            document.querySelector('body').classList.remove('lock');
         } else {
             setIsClosing(false);
+            document.querySelector('body').classList.add('lock');
+            document.querySelector('#back_to_top').classList.add('none');
         }
     }, [isOpen])
 

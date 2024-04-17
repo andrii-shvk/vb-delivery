@@ -7,6 +7,20 @@
 .container {
     max-width: var(--container-main);
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    @media (max-width: 1360px) {
+        width: 1170px;
+    }
+    @media (max-width: 1180px) {
+        width: 969px;
+    }
+    @media (max-width: 970px) {
+        width: 768px;
+    }
+    @media (max-width: 767px) {
+        width: 320px;
+    }
 }
 
 .content {
@@ -15,6 +29,19 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 32px 0;
+    @media (max-width: 1180px) {
+        height: 150px;
+    }
+    @media (max-width: 767px) {
+        height: 100px;
+        padding: 16px 0;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 12px;
+        p {
+            font-size: 14px;
+        }
+    }
 }
 
 .logo {
@@ -26,5 +53,16 @@
         color: var(--primary-color);
         font: var(--font-m);
         font-weight: 700;
+    }
+    @media (max-width: 767px) {
+        gap: 6px;
+        svg {
+            width: 27px;
+            height: 27px;
+        }
+        p {
+            font-size: 16px;
+            letter-spacing: 0.7px;
+        }
     }
 }

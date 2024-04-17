@@ -7,11 +7,13 @@ import { fetchNextOthersPage } from "@/redux/others/service/fetchNextOthersPage"
 import { useContext, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { useDispatch, useSelector } from "react-redux";
+import { useMediaQuery } from 'react-responsive';
 
 const OthersPage = () => {
     const others = useSelector(getOthers);
     const loading = useSelector(getOthersLoading);
     const error = useSelector(getOthersError);
+    const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
     
     const {handleClick} = useContext(LayoutContext);
 
@@ -45,8 +47,8 @@ const OthersPage = () => {
     })
     return (
         <>
-            <ProductLayout header={'Others'} item={item} />
-            {loading && <ProductLayoutSkeleton />}
+            <ProductLayout header={'Others'} item={item} loading={loading} />
+            {loading && <ProductLayoutSkeleton isMobile={isMobile} />}
             {!loading && <div ref={ref} />}
         </>
     );

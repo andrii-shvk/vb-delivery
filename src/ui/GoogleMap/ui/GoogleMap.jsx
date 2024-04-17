@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import cls from "./GoogleMap.module.scss";
 
 const GoogleMap = () => {
-
+  
   return (
     <div className={cls.map}>
       <iframe

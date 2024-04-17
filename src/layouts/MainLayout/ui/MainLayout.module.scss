@@ -1,8 +1,22 @@
 .container {
     margin: 0 auto;
     max-width: var(--container-body);
+    padding-left: 15px;
+    padding-right: 15px;
+    @media (max-width: 1360px) {
+        width: 1110px;
+    }
+    @media (max-width: 1180px) {
+        width: 929px;
+    }
+    @media (max-width: 970px) {
+        width: 768px;
+    }
+    @media (max-width: 767px) {
+        width: 320px;
+    }
 }
 
-.body {
-    gap: 60px;
-}
+// .body {
+//     gap: 60px;
+// }

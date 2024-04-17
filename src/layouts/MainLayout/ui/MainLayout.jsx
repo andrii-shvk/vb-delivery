@@ -15,8 +15,8 @@ const MainLayout = () => {
 
     return (
         <div id='app' className={`app ${theme}`}>
-            <ScrollToAnchor />
             <Header />
+            <ScrollToAnchor />
 
             <main className={cls.main}>
                 <div className={cls.container}>
@@ -32,5 +32,5 @@ const MainLayout = () => {
         </div>
     );
 }
- 
+
 export {MainLayout};

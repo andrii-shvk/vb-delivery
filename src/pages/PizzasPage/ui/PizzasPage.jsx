@@ -8,12 +8,13 @@ import { fetchNextPizzaPage } from '@/redux/pizzas/services/fetchNextPizzaPage';
 import { useInView } from 'react-intersection-observer';
 import { ProductLayoutSkeleton } from '@/layouts/ProductLayout/ui/ProductLayout';
 import { LayoutContext } from '@/providers/LayoutContextProvider';
-
+import { useMediaQuery } from 'react-responsive';
 
 const PizzasPage = () => {
     const pizza = useSelector(getPizza);
     const loading = useSelector(getPizzaLoading);
     const error = useSelector(getPizzaError);
+    const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
 
     const {handleClick} = useContext(LayoutContext);
 
@@ -49,8 +50,8 @@ const PizzasPage = () => {
 
     return (
         <>
-            <ProductLayout header={'Pizza'} item={item} />
-            {loading && <ProductLayoutSkeleton />}
+            <ProductLayout header={'Pizza'} item={item} loading={loading} />
+            {loading && <ProductLayoutSkeleton isMobile={isMobile} />}
             {!loading && <div ref={ref} />}
         </>
     );

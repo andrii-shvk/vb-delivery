@@ -5,4 +5,14 @@
     margin-top: 75px;
     margin-bottom: 50px;
     gap: 30px;
+
+    @media (max-width: 1180px) {
+        margin: 50px 0 50px 0;
+    }
+    @media (max-width: 969px) {
+        margin: 40px 0 40px 0;
+    }
+    @media (max-width: 767px) {
+        gap: 15px;
+    }
 }

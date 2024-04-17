@@ -6,13 +6,31 @@ import { ModalItemBurgers } from '../ModalItemBurgers/ModalItemBurgers';
 import { ModalItemOthers } from '../ModalItemOthers/ModalItemOthers';
 import { Modal } from '@/ui/Modal/ui/Modal';
 import { ModalItemSkeleton } from '../ModalItemSkeleton/ModalItemSkeleton';
+import { useMediaQuery } from 'react-responsive';
 
 const ModalItem = (props) => {
     const {isOpen, setIsOpen} = props;
-
     const product = useSelector(getProductItem);
     const loading =  useSelector(getProductItemLoading);
     const price = useSelector(getProductItemPrice);
+
+    const isMinMobile = useMediaQuery({ query: '(min-width: 320px)' });
+    const isMobile = useMediaQuery({ query: '(min-width: 590px)' });
+    const isTablet = useMediaQuery({ query: '(min-width: 790px)' });
+    const isMedTablet = useMediaQuery({ query: '(min-width: 920px)' });
+    const isBigTablet = useMediaQuery({ query: '(min-width: 968px)' });
+    const isMinDesktop = useMediaQuery({ query: '(min-width: 1080px)' });
+    const isDesktop = useMediaQuery({ query: '(min-width: 1180px)' });
+
+    const sizeModalMenu = () => {
+        if (isDesktop) return 1070;
+            else if (isMinDesktop) return 960;
+            else if (isBigTablet) return 850;
+            else if (isMedTablet) return 820;
+            else if (isTablet) return 700;
+            else if (isMobile) return 480;
+            else if (isMinMobile) return 290;
+    }
 
     const productOptions = () => {
         const props = {
@@ -38,7 +56,7 @@ const ModalItem = (props) => {
             <Modal
                 setIsOpen={setIsOpen}
                 isOpen={isOpen}
-                width={1070}
+                width={sizeModalMenu()}
                 height={680}
                 border={25}
             >
@@ -51,7 +69,7 @@ const ModalItem = (props) => {
         <Modal 
             setIsOpen={setIsOpen}
             isOpen={isOpen}
-            width={1070}
+            width={sizeModalMenu()}
             height={680}
             border={25}
         >

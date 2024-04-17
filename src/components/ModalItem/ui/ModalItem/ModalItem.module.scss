@@ -2,7 +2,6 @@
     display: flex;
     border: 1px solid #f0f0f0;
     border-radius: 6px;
-  
     button {
       flex-basis: 50%;
     }
@@ -27,6 +26,14 @@
     display: flex;
     flex-direction: column;
     gap: 35px;
+    @media (max-width: 799px) {
+      gap: 15px;
+      margin-bottom: 27px;
+    }
+    @media (max-width: 599px) {
+      margin-top: 5px;
+      margin-bottom: 35px;
+    }
   }
   
   .block {
@@ -37,5 +44,11 @@
     p {
       color: var(--primary-color);
       font: var(--font-m);
+    }
+    @media (max-width: 589px) {
+      font-size: 14px;
+      button {
+        padding: 2px;
+      }
     }
   }

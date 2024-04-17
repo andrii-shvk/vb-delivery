@@ -1,4 +1,3 @@
-import { fetchBurgers } from "@/redux/burgers/services/fetchBurgers";
 import { createSlice } from "@reduxjs/toolkit";
 import { fetchOthers } from "../service/fetchOthers";
 

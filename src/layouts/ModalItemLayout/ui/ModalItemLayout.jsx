@@ -5,7 +5,6 @@ import { basketActions } from "@/redux/basket/slice/basketSlice";
 import { useContext } from "react";
 import { LayoutContext } from "@/providers/LayoutContextProvider";
 
-
 const ModalItemLayout = (props) => {
     const {params, price, options} = props;
 

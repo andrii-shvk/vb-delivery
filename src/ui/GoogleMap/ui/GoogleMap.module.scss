@@ -1,5 +1,14 @@
 .map {
     width: 500px;
+    @media (max-width: 1180px) {
+        width: 400px;
+    }
+    @media (max-width: 969px) {
+        width: 740px;
+    }
+    @media (max-width: 767px) {
+        width: 290px;
+    }
 }
 .map iframe {
     border-radius: 10px;

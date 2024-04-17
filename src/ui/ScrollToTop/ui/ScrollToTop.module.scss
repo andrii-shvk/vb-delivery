@@ -1,0 +1,25 @@
+.backToTop {
+    background-color: var(--icon-color);
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: -50px;
+    padding: 10px 12px;
+    z-index: 100;
+    right: 50px;
+    cursor: pointer;
+    transition: 0.3s all;
+    @media (max-width: 768px) {
+        padding: 6px 8px;
+    }
+}
+
+.backToTop svg {
+    fill: #333;
+}
+
+.backToTop.active {
+    bottom: 50px;
+    transition: 0.3s all;
+}
