@@ -1,7 +1,8 @@
 import classNames from 'classnames';
 import cls from './Button.module.scss';
+import { memo } from 'react';
 
-const Button = (props) => {
+const Button = memo((props) => {
     const variantClasses = {
         clear: 'clear', normal: 'normal' 
     }
@@ -18,6 +19,6 @@ const Button = (props) => {
             {children}
         </button>
     );
-}
+})
  
 export {Button};

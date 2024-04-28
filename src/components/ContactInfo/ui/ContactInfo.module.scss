@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 100px;
+    
     @media (max-width: 1360px) {
         margin-bottom: 70px;
     }
@@ -14,16 +15,13 @@
     color: var(--primary-color);
     font: var(--font-m);
     font-weight: 700;
-    @media (max-width: 767px) {
-        text-align: center;   
-        font-size: 16px;
-    }
 }
 .info {
     display: flex;
     flex-direction: column;
     gap: 30px;
     width: 600px;
+
     @media (max-width: 1360px) {
         width: 500px;
     }
@@ -36,15 +34,9 @@
     flex-direction: column;
     color: var(--primary-color);
     margin-left: 20px;
-    @media (max-width: 767px) {
-        margin-left: 0;
-    }
 }
 .dineHours p {
     line-height: 2;
-    @media (max-width: 767px) {
-        font-size: 14px;
-    }
 }
 .workTime {
     display: flex;
@@ -56,21 +48,12 @@
     font: var(--font-s);
     color: var(--primary-color);
     align-items: center;
-    @media (max-width: 767px) {
-        flex-direction: column;
-        gap: 5px;
-    }
 }
 .phone {
     font: var(--font-m);
     color: var(--primary-color);
     display: flex;
     justify-content: space-between;
-    @media (max-width: 767px) {
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
-    }
 }
 .phone a {
     color: var(--primary-color);
@@ -99,10 +82,29 @@
     .info {
         margin-bottom: 25px;
     }
+    .info h3 {
+        text-align: center;   
+        font-size: 16px;
+    }
+    .dineHours {
+        margin-left: 0;
+    }
+    .dineHours p {
+        font-size: 14px;
+    }
+    .phone{
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
     .phone strong {
         font-size: 16px;
     }
     .phone a {
         font-size: 16px;
+    }
+    .location {
+        flex-direction: column;
+        gap: 5px;
     }
 }

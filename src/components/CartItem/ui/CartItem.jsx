@@ -3,8 +3,9 @@ import cls from './CartItem.module.scss';
 import { productsName } from '@/const/const';
 import { useDispatch } from 'react-redux';
 import { fetchProductItem } from '@/redux/productItem/services/fetchProductItem';
+import { memo } from 'react';
 
-const CartItem = (props) => {
+const CartItem = memo((props) => {
     const {
         id, 
         img = '', 
@@ -48,6 +49,6 @@ const CartItem = (props) => {
             </div>
         </article>
     );
-}
+})
 
 export {CartItem};

@@ -1,8 +1,9 @@
 import { Icon } from '@/ui/Icon';
 import cls from './Footer.module.scss';
 import LogoPizza from '@/assets/img/logoPizza.svg'
+import { memo } from 'react';
 
-const Footer = () => {
+const Footer = memo(() => {
     return (
         <footer className={cls.footer}>
             <div className={cls.container}>
@@ -18,6 +19,6 @@ const Footer = () => {
             </div>
         </footer>
     );
-}
+})
  
 export {Footer};

@@ -9,6 +9,7 @@
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+    
     @media (max-width: 1360px) {
         width: 1170px;
     }
@@ -28,6 +29,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     @media (max-width: 767px) {
         display: none;
     }
@@ -35,6 +37,7 @@
 
 .mobileContent {
     display: none;
+
     @media (max-width: 767px) {
         height: 60px;
         display: flex;
@@ -62,6 +65,7 @@
         font: var(--font-m);
         font-weight: 700;
     }
+
     @media (max-width: 969px) {
         svg {
             width: 27px;
@@ -122,6 +126,7 @@
     justify-content: center;
     gap: 30px;
     animation: slideBtns 0.7s;
+
     @media (max-width: 969px) {
         gap: 20px;
     }
@@ -161,6 +166,7 @@
     &:hover {
         background-color: var(--inverted-button-bg-color);
     }
+
     @media (max-width: 969px) {
         min-height: 35px;
         min-width: 90px;
@@ -201,6 +207,7 @@
         color: #fff;
         border-radius: 9px;
     }
+
     @media (max-width: 768px) {
         button {
             min-width: 110px;
@@ -215,6 +222,7 @@
     font-weight: 600;
     font: var(--font-m);
     color: var(--icon-color);
+
     @media (max-width: 768px) {
         font: var(--font-s);
       }
@@ -229,15 +237,10 @@
     color: var(--primary-color);
     border-radius: 50px;
     box-shadow: 0px 2px 4px rgba(25, 25, 25, 0.1);
+
     @media (max-width: 768px) {
         font-size: 12px;
         padding: 7px 15px;
-    }
-}
-
-@media (max-width: 767px) {
-    .location {
-        display: none;
     }
 }
 
@@ -276,5 +279,11 @@
     }
     a:hover {
         color: var(--icon-color);
+    }
+}
+
+@media (max-width: 767px) {
+    .location {
+        display: none;
     }
 }

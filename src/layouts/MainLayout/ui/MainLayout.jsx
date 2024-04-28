@@ -5,11 +5,11 @@ import { useTheme } from '@/hooks/useTheme';
 import { Footer } from '@/components/Footer';
 import { Navbar } from '@/components/Navbar';
 import { ModalItem } from '@/components/ModalItem';
-import { useContext } from 'react';
+import { memo, useContext, useState } from 'react';
 import { LayoutContext } from '@/providers/LayoutContextProvider';
 import { ScrollToAnchor } from '@/ui/ScrollToAnchor';
 
-const MainLayout = () => {
+const MainLayout = memo(() => {
     const {theme} = useTheme();
     const {isOpen, setIsOpen} = useContext(LayoutContext);
 
@@ -17,6 +17,7 @@ const MainLayout = () => {
         <div id='app' className={`app ${theme}`}>
             <Header />
             <ScrollToAnchor />
+
 
             <main className={cls.main}>
                 <div className={cls.container}>
@@ -31,6 +32,6 @@ const MainLayout = () => {
             <ModalItem isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
     );
-}
+})
 
 export {MainLayout};

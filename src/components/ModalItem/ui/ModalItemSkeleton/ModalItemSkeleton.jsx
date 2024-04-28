@@ -3,7 +3,7 @@ import { Skeleton } from "@/ui/Skeleton";
 import { useMediaQuery } from 'react-responsive';
 
 const ModalItemSkeleton = () => {
-    const isMinMobile = useMediaQuery({ query: '(max-width: 589px)' })
+    const isMinMobile = useMediaQuery({ query: '(max-width: 599px)' })
     const isMedTablet = useMediaQuery({ query: '(max-width: 920px)' });
     const isBigTablet = useMediaQuery({ query: '(max-width: 1180px)' });
 
@@ -12,7 +12,7 @@ const ModalItemSkeleton = () => {
             {isMinMobile ? 
                 <Skeleton width={240} height={240} className={cls.img} /> : ''
             || isMedTablet ? 
-                <Skeleton width={320} height={320} className={cls.img} /> : 
+                <Skeleton width={250} height={250} className={cls.img} /> : 
                     <Skeleton width={isBigTablet ? 370 : 450} height={isBigTablet ? 370 : 450} className={cls.img} 
             />}
             <div className={cls.content}>
@@ -41,11 +41,11 @@ const ModalItemSkeleton = () => {
                 </div>
 
                 <div className={cls.footer}>
-                    {isMinMobile ? <Skeleton width={110} height={40} /> :
+                    {isMinMobile ? <Skeleton width={110} height={35} /> :
                         <Skeleton width={125} height={30} />
                     }
-                    {isMinMobile ? <Skeleton width={120} height={40} /> :
-                        <Skeleton width={155} height={50} />
+                    {isMinMobile ? <Skeleton width={120} height={35} /> :
+                        <Skeleton width={155} height={35} />
                     }
                 </div>
             </div>

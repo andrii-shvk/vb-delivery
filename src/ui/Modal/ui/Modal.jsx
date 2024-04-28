@@ -36,7 +36,7 @@ const Modal = (props) => {
             document.querySelector('body').classList.add('lock');
             document.querySelector('#back_to_top').classList.add('none');
         }
-    }, [isOpen])
+    }, [isOpen]);
 
     const closeModal = () => {
         setIsOpen(false);

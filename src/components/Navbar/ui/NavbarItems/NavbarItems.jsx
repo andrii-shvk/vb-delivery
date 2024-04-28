@@ -1,10 +1,10 @@
 import cls from './NavbarItems.module.scss'
 import { Icon } from '@/ui/Icon';
 import { AppLink } from '@/ui/AppLink/ui/AppLink';
-import { useContext, useEffect } from 'react';
+import { memo, useContext, useEffect } from 'react';
 import { LayoutContext } from '@/providers/LayoutContextProvider';
 
-const NavbarItems = ({item}) => {
+const NavbarItems = memo(({item}) => {
     const {page, setPage} = useContext(LayoutContext);
 
     useEffect(() => {
@@ -17,6 +17,6 @@ const NavbarItems = ({item}) => {
             <span className={cls.text}>{item.text}</span>
         </AppLink>
     );
-}
+})
  
 export {NavbarItems};

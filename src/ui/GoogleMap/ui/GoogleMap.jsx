@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import cls from "./GoogleMap.module.scss";
+import { memo } from "react";
 
-const GoogleMap = () => {
+const GoogleMap = memo(() => {
   
   return (
     <div className={cls.map}>
@@ -18,6 +19,6 @@ const GoogleMap = () => {
       </iframe>
     </div>
   );
-};
+});
 
 export { GoogleMap };

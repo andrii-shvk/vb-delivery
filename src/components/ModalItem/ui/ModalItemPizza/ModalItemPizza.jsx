@@ -8,7 +8,6 @@ import cls from './../ModalItem/ModalItem.module.scss';
 import { Button } from "@/ui/Button";
 import { useModalItemParams } from "../../helper/useModalItemParams";
 
-
 const ModalItemPizza = (props) => {
     const {isOpen, product, price} = props;
     const params = useModalItemParams();

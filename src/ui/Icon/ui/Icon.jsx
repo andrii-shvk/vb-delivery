@@ -1,4 +1,7 @@
-const Icon = (props) => {
+import { memo } from "react";
+
+const Icon = memo((props) => {
+    
     const {Svg, clickable, onClick, className = ''} = props;
     const icon = <Svg className={`icon ${className}`} onClick={undefined} />
 
@@ -10,6 +13,6 @@ const Icon = (props) => {
         )
     }
     return icon;
-}
+})
  
 export {Icon};

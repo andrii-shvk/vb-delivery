@@ -1,7 +1,8 @@
 import classNames from "classnames";
+import { memo } from "react";
 import { NavLink } from "react-router-dom";
 
-const AppLink = (props) => {
+const AppLink = memo((props) => {
     const {children, to, className = '', activeClassName = '', onClick} = props;
     return (
         <NavLink to={to} className={({isActive}) => {
@@ -14,6 +15,6 @@ const AppLink = (props) => {
             {children}
         </NavLink>
     );
-}
+})
  
 export {AppLink};

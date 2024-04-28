@@ -1,9 +1,9 @@
 import { LOCALSTORAGE_THEME_KEY, Theme } from "@/const/const";
-import { createContext, useEffect, useState } from "react";
+import { createContext, memo, useEffect, useState } from "react";
 
 export const ThemeContext = createContext();
 
-const ThemeProvider = ({children, initialTheme}) => {
+const ThemeProvider = memo(({children, initialTheme}) => {
     const [theme, setTheme] = useState(initialTheme || Theme.LIGHT);
 
     useEffect(() => {
@@ -24,6 +24,6 @@ const ThemeProvider = ({children, initialTheme}) => {
             {children}
         </ThemeContext.Provider>
     );
-}
+})
  
 export {ThemeProvider};

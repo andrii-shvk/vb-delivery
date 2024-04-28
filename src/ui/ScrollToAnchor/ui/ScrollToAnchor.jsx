@@ -1,7 +1,7 @@
-import { useEffect, useRef } from 'react';
+import { memo, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 
-function ScrollToAnchor() {
+const ScrollToAnchor = memo(() => {
   const location = useLocation();
   const lastHash = useRef('');
 
@@ -21,6 +21,6 @@ function ScrollToAnchor() {
   }, [location]);
 
   return null;
-}
+})
 
 export {ScrollToAnchor};

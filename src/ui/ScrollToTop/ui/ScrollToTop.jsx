@@ -1,9 +1,9 @@
 import cls from './ScrollToTop.module.scss';
-import { useEffect, useState } from "react";
+import { memo, useEffect, useState } from "react";
 import BackToTopIcon from "@/assets/img/IconsUI/ScrollToTop.svg"
 import { Icon } from "@/ui/Icon";
 
-const ScrollToTop = () => {
+const ScrollToTop = memo(() => {
     const scrollToTop = () => {
 		window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
 	}
@@ -21,6 +21,6 @@ const ScrollToTop = () => {
             <Icon Svg={BackToTopIcon} />
         </div>
     );
-}
+})
  
 export {ScrollToTop};

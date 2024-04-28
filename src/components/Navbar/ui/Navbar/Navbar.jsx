@@ -1,9 +1,9 @@
 import { useNavbarItemsList } from '@/utils/useNavbarItemsList';
 import cls from './Navbar.module.scss';
 import { NavbarItems } from '../NavbarItems/NavbarItems';
-import { useMemo } from 'react';
+import { memo, useMemo } from 'react';
 
-const Navbar = () => {
+const Navbar = memo(() => {
     const navbarItemsList = useNavbarItemsList();
     const itemsList = useMemo(() => {
         return navbarItemsList.map(item => (
@@ -16,6 +16,6 @@ const Navbar = () => {
             {itemsList}
         </nav>
     );
-}
+})
  
 export {Navbar};

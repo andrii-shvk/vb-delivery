@@ -2,10 +2,11 @@ import { GoogleMap } from '@/ui/GoogleMap';
 import cls from './ContactInfo.module.scss';
 import { dineHours } from '@/const/const';
 import { Link } from 'react-router-dom';
+import { memo } from 'react';
 
-const ContactInfo = () => {
+const ContactInfo = memo(() => {
     
-    const workTime =  dineHours.map(el => {
+    const workTime = dineHours.map(el => {
             return (
                 <div className={cls.workTime} key={el.day}>
                     <p>
@@ -41,6 +42,6 @@ const ContactInfo = () => {
             </div>
         </section>
     );
-}
+})
  
 export {ContactInfo};

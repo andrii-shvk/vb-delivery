@@ -2,15 +2,15 @@ import { Link } from "react-router-dom";
 import cls from './ProductLayout.module.scss';
 import { CartItemSkeleton } from "@/components/CartItem";
 import { Skeleton } from "@/ui/Skeleton";
-import { useContext } from "react";
+import { memo, useContext } from "react";
 import { LayoutContext } from "@/providers/LayoutContextProvider";
 
-export const ProductLayoutSkeleton = ({isMobile}) => {
+export const ProductLayoutSkeleton = memo(({isMobile}) => {
 
     return (
         <>
             <div className={cls.link}>
-                <Skeleton width={260} height={16} />
+                <Skeleton width={isMobile ? 210 : 260} height={16} />
             </div>
             <section className={cls.productBody}>
                 <h2 className={cls.title}>
@@ -27,9 +27,9 @@ export const ProductLayoutSkeleton = ({isMobile}) => {
             </section>
         </>
     )
-}
+})
 
-const ProductLayout = (props) => {
+const ProductLayout = memo((props) => {
     const {header, item, loading} = props;
     const {setPage} = useContext(LayoutContext);
 
@@ -49,6 +49,6 @@ const ProductLayout = (props) => {
             )}
         </>
     );
-}
+})
  
 export {ProductLayout};

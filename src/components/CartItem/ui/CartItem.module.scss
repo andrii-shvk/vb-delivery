@@ -2,6 +2,7 @@
     background: var(--light-bg);
     border-radius: 10px;
     border: 1px solid var(--border-color);
+    
     @media (max-width: 1180px) {
         height: 450px;
         width: 370px;
@@ -23,6 +24,7 @@
     height: 300px;
     width: 100%;
     object-fit: cover;
+
     @media (max-width: 1360px) {
         height: 270px;
     }
@@ -37,6 +39,7 @@
     padding: 15px 20px;
     display: flex;
     flex-direction: column;
+
     @media (max-width: 768px) {
         padding-top: 10px;        
     }
@@ -53,6 +56,7 @@
         text-overflow: ellipsis;
         overflow-y: auto;
     }
+
     @media (max-width: 767px) {
         gap: 6px;
         span {
@@ -66,6 +70,7 @@
 .title {
     font: var(--font-m);
     font-weight: 600;
+
     @media (max-width: 767px) {
         margin-left: auto;
         margin-right: auto;
@@ -82,6 +87,7 @@
     span {
         color: var(--primary-color);
     }
+
     @media (max-width: 767px) {
         margin-left: auto;
         margin-right: auto;
@@ -91,6 +97,7 @@
 .button {
     min-height: 50px;
     min-width: 135px;
+
     @media (max-width: 969px) {
         min-height: 40px;
     }

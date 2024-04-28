@@ -5,7 +5,25 @@
     button {
       flex-basis: 50%;
     }
-  }
+
+    @media (max-width: 799px) {
+      button {
+        height: 35px;
+      }
+      width: 370px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 14px;
+    }
+    
+    @media (max-width: 599px) {
+      button {
+        height: 30px;
+      }
+      width: 250px;
+      font-size: 12px;
+    }
+}
 
   .ingredientsDesc {
     color: var(--primary-color);
@@ -26,13 +44,14 @@
     display: flex;
     flex-direction: column;
     gap: 35px;
+
     @media (max-width: 799px) {
-      gap: 15px;
-      margin-bottom: 27px;
+      gap: 10px;
+      margin-bottom: 10px;
     }
     @media (max-width: 599px) {
-      margin-top: 5px;
-      margin-bottom: 35px;
+      margin-top: 12px;
+      margin-bottom: 12px;
     }
   }
   
@@ -45,8 +64,14 @@
       color: var(--primary-color);
       font: var(--font-m);
     }
-    @media (max-width: 589px) {
-      font-size: 14px;
+    
+    @media (max-width: 799px) {
+      gap: 6px;
+    }
+    @media (max-width: 599px) {
+      p {
+        font-size: var(--font-s);
+      }
       button {
         padding: 2px;
       }

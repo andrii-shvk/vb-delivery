@@ -4,7 +4,7 @@ import { productsName } from "@/const/const";
 import { LayoutContext } from "@/providers/LayoutContextProvider";
 import { Skeleton } from "@/ui/Skeleton";
 import { calcMinPricePizza } from "@/utils/calcMinPrice";
-import { useContext } from "react";
+import { memo, useContext } from "react";
 import { useMediaQuery } from 'react-responsive';
 
 export const getSkeleton = (isTablet) => {
@@ -25,7 +25,7 @@ export const getSkeleton = (isTablet) => {
     )
 }
 
-const ProductTape = (props) => {
+const ProductTape = memo((props) => {
     const {title, products = [], isLoading = false, error = undefined} = props;
     const isTablet = useMediaQuery({ query: '(max-width: 768px)' });
     const {handleClick} = useContext(LayoutContext);
@@ -79,6 +79,6 @@ const ProductTape = (props) => {
             </div>
         </section>
     );
-}
+})
  
 export {ProductTape};

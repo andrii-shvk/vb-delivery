@@ -2,10 +2,10 @@ import { Button } from "@/ui/Button";
 import cls from "./ModalItemLayout.module.scss";
 import { useDispatch } from "react-redux";
 import { basketActions } from "@/redux/basket/slice/basketSlice";
-import { useContext } from "react";
+import { memo, useContext } from "react";
 import { LayoutContext } from "@/providers/LayoutContextProvider";
 
-const ModalItemLayout = (props) => {
+const ModalItemLayout = memo((props) => {
     const {params, price, options} = props;
 
     const {setIsOpen, openPopup} = useContext(LayoutContext);
@@ -36,6 +36,6 @@ const ModalItemLayout = (props) => {
             </div>
         </div>
     );
-}
+})
  
 export {ModalItemLayout};

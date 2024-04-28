@@ -15,8 +15,8 @@ const ModalItem = (props) => {
     const price = useSelector(getProductItemPrice);
 
     const isMinMobile = useMediaQuery({ query: '(min-width: 320px)' });
-    const isMobile = useMediaQuery({ query: '(min-width: 590px)' });
-    const isTablet = useMediaQuery({ query: '(min-width: 790px)' });
+    const isMobile = useMediaQuery({ query: '(min-width: 599px)' });
+    const isTablet = useMediaQuery({ query: '(min-width: 799px)' });
     const isMedTablet = useMediaQuery({ query: '(min-width: 920px)' });
     const isBigTablet = useMediaQuery({ query: '(min-width: 968px)' });
     const isMinDesktop = useMediaQuery({ query: '(min-width: 1080px)' });
@@ -30,6 +30,15 @@ const ModalItem = (props) => {
             else if (isTablet) return 700;
             else if (isMobile) return 480;
             else if (isMinMobile) return 290;
+    }
+    const heightModalMenu = () => {
+        if (isDesktop) return 640;
+            else if (isMinDesktop) return 580;
+            // else if (isBigTablet) return 550;
+            else if (isMedTablet) return 550;
+            else if (isTablet) return 530;
+            else if (isMobile) return 500;
+            else if (isMinMobile) return 600;
     }
 
     const productOptions = () => {
@@ -57,7 +66,7 @@ const ModalItem = (props) => {
                 setIsOpen={setIsOpen}
                 isOpen={isOpen}
                 width={sizeModalMenu()}
-                height={680}
+                height={heightModalMenu()}
                 border={25}
             >
                 <ModalItemSkeleton />
@@ -70,7 +79,7 @@ const ModalItem = (props) => {
             setIsOpen={setIsOpen}
             isOpen={isOpen}
             width={sizeModalMenu()}
-            height={680}
+            height={heightModalMenu()}
             border={25}
         >
             {productOptions()}

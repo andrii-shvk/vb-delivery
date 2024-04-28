@@ -3,6 +3,7 @@
     flex-direction: column;
     gap: 30px;
     margin-bottom: 100px;
+
     @media (max-width: 1360px) {
         margin-bottom: 70px;
     }
@@ -22,6 +23,7 @@
     font: var(--font-l);
     font-weight: 600;
     color: var(--primary-color);
+
     @media (max-width: 1180px) {
         margin-left: 62px;
     }
@@ -38,6 +40,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
+    
     @media (max-width: 1180px) {
         grid-template-columns: repeat(2, 1fr);
         margin-left: auto;

@@ -7,7 +7,7 @@ import { Icon } from '@/ui/Icon';
 import { Link, useNavigate } from 'react-router-dom';
 import { useTheme } from '@/hooks/useTheme';
 import { Modal } from '@/ui/Modal/ui/Modal';
-import { useContext, useEffect, useState } from 'react';
+import { memo, useContext, useEffect, useMemo, useState } from 'react';
 import { BasketItem } from '@/components/BasketItem';
 import { useSelector } from 'react-redux';
 import { getBasketTotalPrice } from '@/redux/basket/selectors/basketSelectors';
@@ -18,7 +18,7 @@ import { useNavbarItemsList } from '@/utils/useNavbarItemsList';
 import classNames from 'classnames';
 import { useMediaQuery } from 'react-responsive';
 
-const Header = () => {
+const Header = memo(() => {
     const navigate = useNavigate();
     const {popup, isOpen} = useContext(LayoutContext);
     const totalPrice = useSelector(getBasketTotalPrice);
@@ -50,19 +50,18 @@ const Header = () => {
 	} else {
 		document.body.classList.remove('lock')
 	}
-    const links = useNavbarItemsList().map(el => {
+    const links = useMemo(() => useNavbarItemsList().map(el => {
         return (
             <Link key={el.path} to={el.path} onClick={() => setIsMenuOpen(false)}>
                 {el.text}
             </Link>
         )
-    })
+    }), [])
 
     return (
         <>
             <header className={cls.header}>
                 <div className={cls.container}>
-
                     <div className={cls.content}>
                         <div className={cls.logo}>
                             <Icon Svg={LogoPizza} clickable onClick={returnToMain} />
@@ -156,6 +155,6 @@ const Header = () => {
             </Modal>
         </>
     );
-}
+})
  
 export {Header};
