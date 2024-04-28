@@ -38,6 +38,9 @@
     & p {
       margin-bottom: 10px;
     }
+    @media (max-width: 799px) {
+      font: var(--font-m);
+    }
   }
   
   .options {
