@@ -1,0 +1,6 @@
+.error {
+    font: var(--font-l);
+    @media (max-widht: 1080px) {
+        font: var(--font-m);
+    }
+}

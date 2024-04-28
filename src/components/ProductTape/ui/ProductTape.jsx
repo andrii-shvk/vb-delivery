@@ -67,7 +67,7 @@ const ProductTape = memo((props) => {
 
     return (
         <section className={cls.products}>
-            <h2 className={cls.title}>{title}</h2>
+            {!error && <h2 className={cls.title}>{title}</h2>}
 
             {error && (
                 <div className='error'>

@@ -1,6 +1,8 @@
+import cls from './NotFoundPage.module.scss'
+
 const NotFoundPage = () => {
     return (
-        <h1>Sorry... This Page can not be found!</h1>
+        <h1 className={cls.error}>Sorry... This Page can not be found!</h1>
     );
 }
  
