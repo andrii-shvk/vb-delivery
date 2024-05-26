@@ -62,7 +62,7 @@ const Modal = (props) => {
             shouldCloseOnOverlayClick={true}
             htmlOpenClassName={cls.modalOpen}
             overlayClassName={cls.overlay}
-            closeTimeoutMS={180}
+            closeTimeoutMS={150}
             onRequestClose={closeModal}
             parentSelector={() => document.querySelector('#app')}
         >

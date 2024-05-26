@@ -16,7 +16,7 @@ const ScrollToAnchor = memo(() => {
                     .getElementById(lastHash.current)
                     ?.scrollIntoView({ behavior: "smooth", block: "start" });
                 lastHash.current = "";
-            }, 130);
+            }, 150);
         }
     }, [location]);
 
