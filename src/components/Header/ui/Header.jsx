@@ -68,7 +68,7 @@ const Header = memo(() => {
                             <p>DeliVirginia</p>
                         </div>
                         
-                            <Link to='/#contactInfo' className={page === true ? cls.location : cls.offLocation}>
+                            <Link to='#contactInfo' className={page === true ? cls.location : cls.offLocation}>
                                 <strong>Location:</strong> 1135 North Yarbrough Drive
                             </Link>
                             

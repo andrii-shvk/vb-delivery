@@ -34,7 +34,6 @@ const ModalItem = (props) => {
     const heightModalMenu = () => {
         if (isDesktop) return 640;
             else if (isMinDesktop) return 580;
-            // else if (isBigTablet) return 550;
             else if (isMedTablet) return 550;
             else if (isTablet) return 530;
             else if (isMobile) return 500;
@@ -54,7 +53,7 @@ const ModalItem = (props) => {
             case productsName.BURGERS:
                 return <ModalItemBurgers {...props} />
             case productsName.OTHERS:
-                return <ModalItemOthers {...props} />   
+                return <ModalItemOthers {...props} />
             default:
                 null 
         }

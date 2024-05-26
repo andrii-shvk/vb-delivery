@@ -1,36 +1,30 @@
-import { GoogleMap } from '@/ui/GoogleMap';
-import cls from './ContactInfo.module.scss';
-import { dineHours } from '@/const/const';
-import { Link } from 'react-router-dom';
-import { memo } from 'react';
+import { GoogleMap } from "@/ui/GoogleMap";
+import cls from "./ContactInfo.module.scss";
+import { dineHours } from "@/const/const";
+import { Link } from "react-router-dom";
+import { memo } from "react";
 
 const ContactInfo = memo(() => {
-    
-    const workTime = dineHours.map(el => {
-            return (
-                <div className={cls.workTime} key={el.day}>
-                    <p>
-                        {el.day}
-                    </p>
-                    <p>
-                        {el.time}
-                    </p>
-                </div>
-            )
-        })
-        
+    const workTime = dineHours.map((el) => {
+        return (
+            <div className={cls.workTime} key={el.day}>
+                <p>{el.day}</p>
+                <p>{el.time}</p>
+            </div>
+        );
+    });
+
     return (
         <section className={cls.contactForm}>
             <div className={cls.info}>
-                <h3>
-                    Dine In Hours :
-                </h3>
-                <div className={cls.dineHours}>
-                    {workTime}
-                </div>
-                <div className={cls.location} id='contactInfo'>
+                <h3>Dine In Hours :</h3>
+                <div className={cls.dineHours}>{workTime}</div>
+                <div className={cls.location} id="contactInfo">
                     <strong>Location & Drive-Thru :</strong>
-                    <span>1135 North Yarbrough Drive <br/>VIRGINIA BEACH VA, 23452</span>
+                    <span>
+                        1135 North Yarbrough Drive <br />
+                        VIRGINIA BEACH VA, 23452
+                    </span>
                 </div>
                 <div className={cls.phone}>
                     <strong>Phone :</strong>
@@ -42,6 +36,6 @@ const ContactInfo = memo(() => {
             </div>
         </section>
     );
-})
- 
-export {ContactInfo};
+});
+
+export { ContactInfo };
